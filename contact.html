@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | WebX — Get in Touch</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body class="contact-page">
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Particles Background -->
+    <div id="particles-js"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="webx-logo-transparent.png" alt="WebX" class="logo-image">
+                <span class="logo-text-sr">WebX</span>
+                <div class="logo-glow-png"></div>
+                <div class="logo-glow-pulse-png"></div>
+            </a>
+            
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link active">Contact</a>
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Loader -->
+    <div class="page-loader">
+        <div class="loader-content">
+            <div class="loader-logo">
+                <span>W</span>
+                <span>E</span>
+                <span>B</span>
+                <span class="neon-loader">X</span>
+            </div>
+            <div class="loader-progress">
+                <div class="progress-bar"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Hero Section -->
+    <section class="contact-hero">
+        <div class="container">
+            <div class="contact-hero-content">
+                <!-- Animated Background Elements -->
+                <div class="contact-particles">
+                    <div class="contact-particle"></div>
+                    <div class="contact-particle"></div>
+                    <div class="contact-particle"></div>
+                    <div class="contact-particle"></div>
+                    <div class="contact-particle"></div>
+                    <div class="contact-particle"></div>
+                </div>
+                
+                <!-- Floating Icons -->
+                <div class="floating-icons">
+                    <div class="floating-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="floating-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="floating-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                </div>
+                
+                <!-- Main Content -->
+                <div class="hero-text">
+                    <div class="hero-badge">
+                        <i class="fas fa-comment-alt"></i>
+                        <span>Let's Connect</span>
+                    </div>
+                    
+                    <h1 class="hero-title">
+                        Let's Build Something
+                        <br>
+                        <span class="text-gradient">Amazing Together</span>
+                    </h1>
+                    
+                    <p class="hero-subtitle">
+                        Ready to transform your digital presence? Get in touch with our team. 
+                        We're here to turn your vision into reality with premium web solutions.
+                    </p>
+                    
+                    <!-- Contact Stats -->
+                    <div class="contact-stats">
+                        <div class="stat">
+                            <div class="stat-number" data-count="24">0</div>
+                            <div class="stat-label">Hour Response Time</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number" data-count="150">0</div>
+                            <div class="stat-label">Projects Delivered</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number" data-count="98">0</div>
+                            <div class="stat-label">Client Satisfaction</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Quick Contact Cards -->
+                <div class="quick-contact">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope-open-text"></i>
+                            <div class="icon-glow"></div>
+                        </div>
+                        <div class="contact-info">
+                            <h3>Email Us</h3>
+                            <p>build.with.webx@gmail.com</p>
+                            <a href="mailto:build.with.webx@gmail.com" class="contact-link">
+                                Send Message
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-volume"></i>
+                            <div class="icon-glow"></div>
+                        </div>
+                        <div class="contact-info">
+                            <h3>Call Us</h3>
+                            <p>+91 9674026774</p>
+                            <a href="tel:+919674026774" class="contact-link">
+                                Call Now
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Get in Touch</span>
+        </div>
+    </section>
+
+   <!-- Contact Form Section -->
+<section class="contact-form-section">
+    <div class="container">
+        <div class="form-container">
+            <div class="form-header">
+                <h2 class="section-title">Send Us a <span class="text-gradient">Message</span></h2>
+                <p class="section-subtitle">Fill out the form below and we'll get back to you within 24 hours.</p>
+            </div>
+            
+            <!-- Form Status Messages -->
+            <div class="form-status" id="formStatus">
+                <div class="status-message success">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Message sent successfully! We'll get back to you soon.</span>
+                </div>
+                <div class="status-message error">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <span>Please fill in all required fields correctly.</span>
+                </div>
+                <div class="status-message loading">
+                    <i class="fas fa-spinner fa-spin"></i>
+                    <span>Sending your message...</span>
+                </div>
+            </div>
+            
+            <form 
+                id="contactForm" 
+                class="contact-form"
+                action="https://formspree.io/f/xqedjavk"  
+                method="POST"
+            >
+                <!-- Honeypot field to prevent spam -->
+                <input type="text" name="_gotcha" style="display:none">
+                
+                <!-- Form Grid -->
+                <div class="form-grid">
+                    <!-- Left Column -->
+                    <div class="form-column">
+                        <!-- Name Field -->
+                        <div class="form-group">
+                            <label for="name" class="form-label">
+                                <span>Your Name</span>
+                                <span class="required">*</span>
+                            </label>
+                            <div class="input-wrapper">
+                                <i class="fas fa-user"></i>
+                                <input 
+                                    type="text" 
+                                    id="name" 
+                                    name="name" 
+                                    class="form-input"
+                                    placeholder="Enter your full name"
+                                    required
+                                >
+                                <div class="input-glow"></div>
+                            </div>
+                            <div class="error-message" id="nameError"></div>
+                        </div>
+                        
+                        <!-- Email Field -->
+                        <div class="form-group">
+                            <label for="email" class="form-label">
+                                <span>Email Address</span>
+                                <span class="required">*</span>
+                            </label>
+                            <div class="input-wrapper">
+                                <i class="fas fa-envelope"></i>
+                                <input 
+                                    type="email" 
+                                    id="email" 
+                                    name="email" 
+                                    class="form-input"
+                                    placeholder="your_email@example.com"
+                                    required
+                                >
+                                <div class="input-glow"></div>
+                            </div>
+                            <div class="error-message" id="emailError"></div>
+                        </div>
+                        
+                        <!-- Phone Field -->
+                        <div class="form-group">
+                            <label for="phone" class="form-label">
+                                <span>Phone Number</span>
+                                <span class="required">*</span>
+                            </label>
+                            <div class="input-wrapper">
+                                <i class="fas fa-phone"></i>
+                                <input 
+                                    type="tel" 
+                                    id="phone" 
+                                    name="phone" 
+                                    class="form-input"
+                                    placeholder="+1 (555) 123-4567"
+                                >
+                                <div class="input-glow"></div>
+                            </div>
+                            <div class="error-message" id="phoneError"></div>
+                        </div>
+                        
+                        <!-- Project Type -->
+                        <div class="form-group">
+                            <label for="projectType" class="form-label">
+                                <span>Project Type</span>
+                                <span class="required">*</span>
+                            </label>
+                            <div class="select-wrapper">
+                                <i class="fas fa-briefcase"></i>
+                                <select id="projectType" name="projectType" class="form-select" required>
+                                    <option value="" disabled selected>Select project type</option>
+                                    <option value="web">Web Development</option>
+                                    <option value="mobile">Mobile App</option>
+                                    <option value="ecommerce">E-commerce</option>
+                                    <option value="branding">Branding</option>
+                                    <option value="uiux">UI/UX Design</option>
+                                    <option value="other">Other</option>
+                                </select>
+                                <div class="select-arrow">
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="input-glow"></div>
+                            </div>
+                            <div class="error-message" id="projectTypeError"></div>
+                        </div>
+                    </div>
+                    
+                    <!-- Right Column -->
+                    <div class="form-column">
+                        <!-- Company Field -->
+                        <div class="form-group">
+                            <label for="company" class="form-label">
+                                <span>Company</span>
+                                <span class="optional">(Optional)</span>
+                            </label>
+                            <div class="input-wrapper">
+                                <i class="fas fa-building"></i>
+                                <input 
+                                    type="text" 
+                                    id="company" 
+                                    name="company" 
+                                    class="form-input"
+                                    placeholder="Your company name"
+                                >
+                                <div class="input-glow"></div>
+                            </div>
+                            <div class="error-message" id="companyError"></div>
+                        </div>
+                        
+                        <!-- Budget Range -->
+                        <div class="form-group">
+                            <label class="form-label">
+                                <span>Project Budget</span>
+                                <span class="optional">(Optional)</span>
+                            </label>
+                            <div class="budget-slider">
+                                <div class="budget-range">
+                                    <span class="budget-min">₹5,000</span>
+                                    <span class="budget-max">₹50,000+</span>
+                                </div>
+                                <div class="slider-container">
+                                    <input 
+                                        type="range" 
+                                        id="budget" 
+                                        name="budget" 
+                                        min="1" 
+                                        max="6" 
+                                        value="3"
+                                        class="budget-slider-input"
+                                    >
+                                    <div class="slider-track">
+                                        <div class="slider-progress"></div>
+                                    </div>
+                                    <div class="slider-ticks">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                                <div class="budget-labels">
+                                    <span>₹5k</span>
+                                    <span>₹10k</span>
+                                    <span>₹20k</span>
+                                    <span>₹30k</span>
+                                    <span>₹40k</span>
+                                    <span>₹50k+</span>
+                                </div>
+                                <div class="selected-budget">
+                                    <span id="selectedBudget">₹20,000</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Timeline -->
+                        <div class="form-group">
+                            <label class="form-label">
+                                <span>Project Timeline</span>
+                                <span class="optional">(Optional)</span>
+                            </label>
+                            <div class="timeline-options">
+                                <div class="timeline-option">
+                                    <input type="radio" id="timeline-1" name="timeline" value="1-2 Months">
+                                    <label for="timeline-1">
+                                        <span class="timeline-label">1-2 Months</span>
+                                    </label>
+                                </div>
+                                <div class="timeline-option">
+                                    <input type="radio" id="timeline-2" name="timeline" value="3-4 Months">
+                                    <label for="timeline-2">
+                                        <span class="timeline-label">3-4 Months</span>
+                                    </label>
+                                </div>
+                                <div class="timeline-option">
+                                    <input type="radio" id="timeline-3" name="timeline" value="5-6 Months" checked>
+                                    <label for="timeline-3">
+                                        <span class="timeline-label">5-6 Months</span>
+                                    </label>
+                                </div>
+                                <div class="timeline-option">
+                                    <input type="radio" id="timeline-4" name="timeline" value="Flexible">
+                                    <label for="timeline-4">
+                                        <span class="timeline-label">Flexible</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Message Field -->
+                <div class="form-group message-group">
+                    <label for="message" class="form-label">
+                        <span>Your Message</span>
+                        <span class="required">*</span>
+                    </label>
+                    <div class="textarea-wrapper">
+                        <i class="fas fa-comment-alt"></i>
+                        <textarea 
+                            id="message" 
+                            name="message" 
+                            class="form-textarea"
+                            placeholder="Tell us about your project, goals, and any specific requirements..."
+                            rows="6"
+                            required
+                        ></textarea>
+                        <div class="textarea-glow"></div>
+                        <div class="char-counter">
+                            <span id="charCount">0</span>/500
+                        </div>
+                    </div>
+                    <div class="error-message" id="messageError"></div>
+                </div>
+                
+                <!-- File Upload (Note: Formspree free tier doesn't handle files) -->
+                <div class="form-group">
+                    <label class="form-label">
+                        <span>Attach Files</span>
+                        <span class="optional">(Optional - Max 10MB)</span>
+                    </label>
+                    <div class="file-upload">
+                        <input 
+                            type="file" 
+                            id="fileUpload" 
+                            name="files" 
+                            class="file-input"
+                            multiple
+                            accept=".pdf,.doc,.docx,.jpg,.jpeg,.png,.zip"
+                        >
+                        <label for="fileUpload" class="file-label">
+                            <i class="fas fa-cloud-upload-alt"></i>
+                            <div class="file-content">
+                                <span class="file-title">Drop files here or click to upload</span>
+                                <span class="file-subtitle">PDF, DOC, JPG, PNG, ZIP (10MB max)</span>
+                            </div>
+                        </label>
+                        <div class="file-preview" id="filePreview"></div>
+                    </div>
+                </div>
+                
+                <!-- Privacy Policy -->
+                <div class="form-group privacy-group">
+                    <div class="checkbox-wrapper">
+                        <input type="checkbox" id="privacy" name="privacy" class="form-checkbox" required>
+                        <label for="privacy" class="checkbox-label">
+                            <span class="checkbox-custom">
+                                <i class="fas fa-check"></i>
+                            </span>
+                            <span class="checkbox-text">
+                                I agree to the <a href="#" class="privacy-link">Privacy Policy</a> and consent to WebX contacting me about my project.
+                            </span>
+                        </label>
+                    </div>
+                    <div class="error-message" id="privacyError"></div>
+                </div>
+                
+                <!-- Submit Button -->
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary btn-large submit-btn">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                        <div class="submit-glow"></div>
+                    </button>
+                    <div class="form-note">
+                        <i class="fas fa-info-circle"></i>
+                        <span>We'll get back to you within 24 hours. No spam, ever.</span>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+    <!-- Interactive Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Find Us <span class="text-gradient">Here</span></h2>
+                <p class="section-subtitle">Visit our studio or connect with us remotely</p>
+            </div>
+            
+            <div class="map-container">
+                <!-- Map -->
+                <div id="map" class="contact-map"></div>
+                
+                <!-- Map Controls -->
+                <div class="map-controls">
+                    <button class="map-btn" data-location="studio">
+                        <i class="fas fa-building"></i>
+                        <span>Studio</span>
+                    </button>
+                    <button class="map-btn active" data-location="headquarters">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Headquarters</span>
+                    </button>
+                    <button class="map-btn" data-location="remote">
+                        <i class="fas fa-globe"></i>
+                        <span>Remote</span>
+                    </button>
+                </div>
+                
+                <!-- Map Info Card -->
+                <div class="map-info-card">
+                    <div class="map-info-header">
+                        <h3>WebX Headquarters</h3>
+                        <div class="map-status">
+                            <i class="fas fa-circle"></i>
+                            <span>Open Now</span>
+                        </div>
+                    </div>
+                    <div class="map-info-content">
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Address</h4>
+                                <p>Pujali, Budge Budge, Kolkata, WB, India</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Hours</h4>
+                                <p>Mon-Fri: 9AM-6PM EST</p>
+                                <p>Sat: 10AM-4PM EST</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Contact</h4>
+                                <p>+91 9674026774</p>
+                                <p>build.with.webx@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-outline get-directions">
+                        <i class="fas fa-directions"></i>
+                        <span>Get Directions</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Contact Section -->
+    <section class="team-contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Meet Our <span class="text-gradient">Founder</span></h2>
+                <p class="section-subtitle">Connect directly with our Founder</p>
+            </div>
+            
+            <div class="team-contact-cards">
+               
+                
+                <!-- Founder -->
+                <div class="team-contact-card">
+                    <div class="member-avatar">
+                        <img src="Ishan Maitra.jpeg" alt="Ishan Maitra">
+                        <div class="avatar-status online">
+                            <i class="fas fa-circle"></i>
+                        </div>
+                        <div class="avatar-glow"></div>
+                    </div>
+                    
+                    <div class="member-info">
+                        <h3 class="member-name">Ishan Maitra</h3>
+                        <div class="member-role">Founder & CEO</div>
+                        <p class="member-specialty">AI & Full Stack Development</p>
+                    </div>
+                    
+                    <div class="member-contact">
+                        <div class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <span>ishanmaitra@2012@gmail.com</span>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-phone"></i>
+                            <span>+91 9674026774</span>
+                        </div>
+                    </div>
+                    
+                    <button class="btn btn-outline schedule-btn" data-member="ishan">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>Schedule Call</span>
+                    </button>
+                    
+                    <div class="member-glow"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="contact-faq">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Frequently Asked <span class="text-gradient">Questions</span></h2>
+                <p class="section-subtitle">Quick answers to common inquiries</p>
+            </div>
+            
+            <div class="faq-accordion">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What's your typical response time?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We respond to all inquiries within 24 hours during business days. For urgent matters, you can call us directly at +91 9674026774.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 2 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How do you determine project costs?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Project costs are determined based on scope, complexity, timeline, and specific requirements. After our initial consultation, we provide a detailed proposal with transparent pricing.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 3 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do you work with international clients?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely! We work with clients worldwide. Our team is experienced in managing projects across different time zones and cultural contexts.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 4 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What's your project process like?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our process includes discovery, strategy, design, development, testing, and launch phases. We maintain transparent communication throughout and involve you at every key milestone.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 5 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do you offer ongoing support?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we offer various support packages including maintenance, updates, hosting, and performance optimization. We ensure your digital presence continues to perform at its best.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="faq-cta">
+                <p>Still have questions? <a href="tel:+919674026774" class="text-link">Call our support team</a> or <a href="mailto:build.with.webx@gmail.com" class="text-link">send us an email</a>.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule Modal -->
+    <div class="schedule-modal" id="scheduleModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-container">
+            <button class="modal-close">
+                <i class="fas fa-times"></i>
+            </button>
+            
+            <div class="modal-content">
+                <!-- Content will be loaded dynamically -->
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA Section -->
+    <section class="cta contact-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to Start Your Journey?</h2>
+                <p class="cta-text">Let's create something extraordinary together. Get in touch today for a free consultation.</p>
+                <div class="cta-buttons">
+                    <a href="#contactForm" class="btn btn-primary btn-large">
+                        <span>Start a Project</span>
+                        <i class="fas fa-rocket"></i>
+                    </a>
+                    <a href="tel:+15551234567" class="btn btn-outline btn-large">
+                        <span>Call Us Now</span>
+                        <i class="fas fa-phone"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="footer-logo">
+                        <img src="webx-logo-transparent.png" alt="WebX" class="footer-logo-image">
+                        <span class="footer-logo-text-sr">WebX</span>
+                        <div class="footer-logo-glow"></div>
+                    </a>
+                    
+                    <p class="footer-text">Where Code Meets Creativity. We build digital experiences that make noise and drive results.</p>
+                    
+                     <div class="social-links">
+                        <a href="https://x.com/web_x_web" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.instagram.com/webx.web" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://github.com/webx-studio" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/ishan-maitra" class="social-link">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-title">Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Web Development</a></li>
+                        <li><a href="services.html">Mobile Apps</a></li>
+                        <li><a href="services.html">E-commerce</a></li>
+                        <li><a href="services.html">UI/UX Design</a></li>
+                        <li><a href="services.html">SEO & Marketing</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-title">Contact Info</h3>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Pujali, Ramchandrapur, Budge Budge, Kolkata, WB, India</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>+91 9674026774</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>build.with.webx@gmail.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2026 WebX. All rights reserved. Built with ❤️ and premium code.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+    <script src="contact-animation.js"></script>
+</body>
+</html>

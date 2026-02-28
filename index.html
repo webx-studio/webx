@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="description" content="WebX - Premium Web & AI development agency creating stunning, high-performance websites & AI solutions for businesses worldwide.">
+    <meta property="og:title" content="WebX | Website Builder">
+    <meta property="og:description" content="Crafting ultra-modern, visually stunning websites & AI Tools with premium code and cutting-edge technology.">
+    <meta property="og:image" content="https://instagram.fccu2-2.fna.fbcdn.net/v/t51.82787-15/597848519_17866502271509730_7778158715017275421_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=instagram.fccu2-2.fna.fbcdn.net&_nc_cat=106&_nc_oc=Q6cZ2QGfP2HZAGnFyccOg3ROrdLZJBlqJ1FYEiBF-3AoyOuDnWf0h5dj8RS3ZZaoyz8EfaNlGIgEDNR83702jr1gQKU8&_nc_ohc=qdBS6GrRpbwQ7kNvwF5w7ds&_nc_gid=qh9rcVI9UX_xfFp6aA57dg&edm=ALGbJPMBAAAA&ccb=7-5&oh=00_AfvL9pxH-QhgJNNUSqni5QG1OEmDJsBJ1UGkuwbW1x8i6A&oe=69A8A56D&_nc_sid=7d3ac5">
+    <meta property="og:url" content="MY_WEBSITE_URL">
+    <meta name="google-site-verification" content="MY_GOOGLE_VERFICATION" />
+
+    <!-- SEO Keywords -->
+<meta name="keywords" content="WebX, Web X, Ishan Maitra, Maitra Web Tech, website design, HTML CSS design, landing page, portfolio site, e-commerce website, Maitra Web Tech, Maitra Web Tech Founder, Website Builder, Ishan Maitra Articles, CEO M.W.T, Web Designer, Web Developer, Front-end Developer, HTML CSS JavaScript, Portfolio Website, Premium Web Design, Landing Page, Business Website, Responsive Design">    
+<meta name="twitter:card" content="summary_large_image">
+    <title>WebX</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Particles Background -->
+    <div id="particles-js"></div>
+
+   <!-- Navigation -->
+<nav class="navbar">
+    <div class="container">
+        <a href="index.html" class="logo">
+            <!-- Your Custom PNG Logo -->
+            <img src="webx-logo-transparent.png" alt="WebX" class="logo-image">
+            
+            <!-- Optional: Text fallback for accessibility -->
+            <span class="logo-text-sr">WebX</span>
+            
+            <!-- Glow Effects for PNG Logo -->
+            <div class="logo-glow-png"></div>
+            <div class="logo-glow-pulse-png"></div>
+        </a>
+        
+        <div class="nav-menu">
+            <a href="index.html" class="nav-link active">Home</a>
+            <a href="services.html" class="nav-link">Services</a>
+            <a href="projects.html" class="nav-link">Projects</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+            <button class="theme-toggle" id="themeToggle">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+        
+        <button class="menu-toggle" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+</nav>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-tagline">WebX — Where Your Brand Meets Us</div>
+                <h1 class="hero-title">
+                    <span class="text-gradient">We Build Websites & AI</span>
+                    <span class="typewriter-text" id="typewriter"></span>
+                </h1>
+                <p class="hero-subtitle">We don't follow trends. We create them. <br> Premium code. Zero boring energy.</p>
+                
+                <div class="hero-buttons">
+                    <a href="contact.html" class="btn btn-primary">
+                        <span>Get Started</span>
+                        <div class="btn-ripple"></div>
+                    </a>
+                    <a href="projects.html" class="btn btn-secondary">
+                        <span>View Work</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-number" data-count="400+">0</div>
+                        <div class="stat-label">Projects Delivered</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number" data-count="98">0</div>
+                        <div class="stat-label">Client Satisfaction</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number" data-count="5">0</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                </div>
+            </div>
+            
+           <div class="hero-visual">
+    <div class="floating-logo">
+        <!-- Your WebX PNG Logo -->
+        <img src="webx-logo-transparent.png" alt="WebX" class="hero-logo-image">
+        
+        <!-- Multiple Glow Effects -->
+        <div class="hero-logo-glow glow-1"></div>
+        <div class="hero-logo-glow glow-2"></div>
+        <div class="hero-logo-glow glow-3"></div>
+        
+        <!-- Particle Effects Around Logo -->
+        <div class="logo-particles-container">
+            <div class="logo-particle"></div>
+            <div class="logo-particle"></div>
+            <div class="logo-particle"></div>
+            <div class="logo-particle"></div>
+            <div class="logo-particle"></div>
+            <div class="logo-particle"></div>
+        </div>
+        
+        <!-- Rotating Ring -->
+        <div class="logo-ring"></div>
+        
+        <!-- Corner Accents -->
+        <div class="logo-corner tl"></div>
+        <div class="logo-corner tr"></div>
+        <div class="logo-corner bl"></div>
+        <div class="logo-corner br"></div>
+    </div>
+</div>
+
+<div class="scroll-indicator">
+    <div class="mouse">
+        <div class="wheel"></div>
+    </div>
+</div>
+    </section>
+
+    <!-- Why Choose WebX -->
+    <section class="section why-us">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Why Choose <span class="text-gradient">WebX</span></h2>
+                <p class="section-subtitle">Crafting digital experiences with precision and art.</p>
+            </div>
+            
+            <div class="cards-container">
+                <div class="card" data-tilt>
+                    <div class="card-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3 class="card-title">Lightning Fast</h3>
+                    <p class="card-text">Websites that load faster than your morning coffee. Performance, aesthetics, and innovation — perfected.</p>
+                    <div class="card-glow"></div>
+                </div>
+                
+                <div class="card" data-tilt>
+                    <div class="card-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3 class="card-title">Design That Slaps</h3>
+                    <p class="card-text">Design so clean it makes your screen shine. Built with logic, styled with vibes.</p>
+                    <div class="card-glow"></div>
+                </div>
+                
+                <div class="card" data-tilt>
+                    <div class="card-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="card-title">Clean Code</h3>
+                    <p class="card-text">Powered by caffeine, passion, and world-class JavaScript. Where modern design meets engineering excellence.</p>
+                    <div class="card-glow"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Services Preview -->
+    <section class="section services-preview">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our <span class="text-gradient">Services</span></h2>
+                <p class="section-subtitle">Your Vision → Our Execution.</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3 class="service-title">Web Development</h3>
+                    <p class="service-description">Custom websites built with cutting-edge tech stacks.</p>
+                    <a href="services.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3 class="service-title">AI Tools</h3>
+                    <p class="service-description">Responsive AI Tools that drive your business.</p>
+                    <a href="services.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3 class="service-title">E-commerce</h3>
+                    <p class="service-description">Online stores designed to convert and captivate.</p>
+                    <a href="services.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="service-title">SEO & Marketing</h3>
+                    <p class="service-description">Boost your visibility with data-driven strategies.</p>
+                    <a href="services.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fas fa-pencil-ruler"></i>
+                    </div>
+                    <h3 class="service-title">UI/UX & Product Design</h3>
+                    <p class="service-description">Design systems and interfaces engineered for usability, clarity, and conversion.</p>
+                    <a href="services.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3 class="service-title">Performance & Maintenance</h3>
+                    <p class="service-description">Keep your digital infrastructure secure, optimized, and always evolving.</p>
+                    <a href="services.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <a href="services.html" class="btn btn-outline">
+                    <span>View All Services</span>
+                    <i class="fas fa-external-link-alt"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- Client Reviews -->
+    <section class="section reviews">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What Clients <span class="text-gradient">Say</span></h2>
+                <p class="section-subtitle">Websites that slap harder than Monday deadlines.</p>
+            </div>
+            
+            <div class="reviews-slider">
+                <div class="review-card active">
+                    <div class="review-content">
+                        <div class="review-quote">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="review-text">"WebX transformed our online presence completely. The website they built increased our conversions by 300%!"</p>
+                        <div class="review-author">
+                            <img src="https://cdn.pixabay.com/photo/2022/03/11/06/14/indian-man-7061278_1280.jpg" alt="Rahul Sharma">
+                            <div>
+                                <h4>Rahul Sharma</h4>
+                                <p>Founder, FinTech Startup – Bengaluru</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="review-card">
+                    <div class="review-content">
+                        <div class="review-quote">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="review-text">"These guys are absolute legends. They delivered our project ahead of schedule with quality beyond expectations."</p>
+                        <div class="review-author">
+                            <img src="data:image/jpeg;base64,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" alt="Priya Mehta">
+                            <div>
+                                <h4>Priya Mehta</h4>
+                                <p>Owner, UrbanStyle Store – Mumbai</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="review-card">
+                    <div class="review-content">
+                        <div class="review-quote">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="review-text">"Working with WebX was a game-changer for our startup. Their technical expertise and creative vision are unmatched."</p>
+                        <div class="review-author">
+                            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhMSEhIVEA8VFhAQEA8QEg8PDw8PFRUWFhUVFRUYHSggGBolHRUVITEhJSkrLi4uFx8zODMsNygtLisBCgoKDg0OGhAQGi0dHR0tLS0rLS0rLS0tLS0tLS0rLSstLS0tLS0rLSstLS0tLSstLS0tLS0rLS0tLS0tLS0tK//AABEIALcBEwMBIgACEQEDEQH/xAAcAAACAgMBAQAAAAAAAAAAAAAEBQMGAAECBwj/xAA6EAABAwMCAwYDBgUFAQEAAAABAAIDBBEhBRIxQVEGEyJhcYEykbFCUqHR4fAUI2LB8QcVM3KColP/xAAaAQACAwEBAAAAAAAAAAAAAAACAwABBAUG/8QAJhEAAgICAwACAQQDAAAAAAAAAAECEQMSBCExE0FRFCJhcQVC0f/aAAwDAQACEQMRAD8A8tspY4rrpseUxhhsFnEAjYFvuUf3SzuVCMAa1TMCxzMldtCBsVJEjQpWBcMCIjahBJYQj6eG64o6e6fUVGrLN6dSZVnooOCFoqfgnVOxPggkgqmaiAFHGlms62ynA3ZJvZo5/vKYMG7ihJ5gOJA9SAqTXdsnNN32jZ9m1nX9Ti3t80sPa0v3WAc0kEtuTYEAC/Vt1KIXqaoaeDgfQgpbVTLz6r1M962S20ZaQ0WDTywOCNl1SR4Dg43GLDgSB09ilyxNguLZbBIpmKt6brH/AOpAB4P+H5p/T1DXAEEEHII4FZpRcX2LoLAXMjVoSLh8iEgHUJdO9H1DkoqnqygOqelshRdQ5BlMiWiB4ULmIstXJjRBC98SxrEa6JRuaoFZqFuQnsUeAkTTZOaGouLKFo7dGl9dFhOCEr1J4AUDoqNRB4itKWaXxFYiJQTCzITSJqXtRcM4CooLbGtTAALj+LHJROeXcUMmRkW1cFT7Vru0ADNMRkAULGImEKANDnT2KxUbFX6BPqV6tFDqmamUSU0sqlr9QETNx45ABwL2Jz5AAn2T4sNM3q+vRU9w9w3WBawHxPPpyAFrn+oLyrtJqss8xmfJtiAAaxgI4HfbPE4tfyKXav2hcJpHnMxIduOCDY8B5X9kpirC55c8A7QSA7LbkbuHP+6clQ2KHD52yAgDc9wBvIN1r2v/AICh0sCMuG4EkcBkta3JA+nRLtKqHucZHk2N7AYB87eSjpWlhMjjYXPmGn7psiRbQym1C/hy34rAcBb6/qpaDWbbW5uSQSONrWJ+RQLtVjaAAGSDndg4dLkXBQdc9jHbojh1sDkDk/l7FSyUO6zTdjXOc8nb8AGOZu0WH4I7QdSkaC0lzdpBLTgAE8wUkGtOIvcbs7edrm97LmhqHAv3EkuF+N/ELWCFpMjR6M/tDG2wJ8RAsB5hH09Y14wfPkvNYKsyBtznw+3l8iE70qsEckTcgkuBd9lwIOPnZInhVWhUoFpqHpZUFGTPS+dyzISBzIchSylRhOiWjGxqQRrpgUrWqy7IHRIOaJN+5Q01OUWpNhQ4KekvfCIjoi4ptSad5IX0OgrI2brJTqMBPFXSDT8cEFqGmeSDYfoeZTUpuVtWafTTuOFiPYvUShbXTWrZCgk5aUTGUPZERFC0UwhoXVlppWXQ0CzpqJhah2JjRwEq0gJB9E1NoXIamgRkcKJIANp5FVu3+rENaxnBpcx7uW9wBt8h+KsTn7Gud91rnfIXXmOuVoexm3DyLzxuvmQcZAeYI/G6ZjXYyBXtWeZHgjiQAfNw4/VDme23qBtPpm31KNgma2QBx82uP2TbF/JCmifI8iNhc699rQSPXyCe/wAj130GsnBs2+08W3sAT0/fkmVJT+El+PY7rdLtI3D2THsz2W79oe7LMNty3NG11vcFW+n7ItAs0AD0SXninRpXFk1s+jzH/ae+f4RtbnkWj8StT6E/aSCCRwHE2/zf5L2jTuyzG/ZHyUlR2eZf4Qlyyy9GRwR8bPCIoHtxazuBe7Fs8r9UYAGeK4JHAct3+V6nX9kWv4NseowqF2i7NSwl1hvAG7+oNPMdbZTIZVIXkwuPnZX6Wcjzu7j1P7srFSbv5br+Lc1rRm5tzA6eZ6qqscRY8P3yTymaGkbn3cRcHhtPQfvonUZZF2dLYAIWSRcd5cD0H0UbisWvZlZp5WRtXKJhYjSIbYxH0tLdZTQ5T2jpk2MbBbA2UXko5aLyVjZTYUUtMn6C7EUFD5JtR0aKhpUwp4FlyROjh8Io6XChqaS4TpkSiniStTSU6XTsnC0rA+EXKxTUh4s1YSuA5clyMyHd1JG5C7l3G9QFhzXqRmVBC26bUVMqoBsloqMlWKiorclrTqVPqanRKIFWQQUqIFMjY4lL3aZqFQplhxblwPovIu2FD/DSljctIJZjxBrrgg+xsva5WLy7/VOns+J3Vrh5kA/TKKKphx6KAGGVzQPiw29umBfryV/0bs7Jts2fu43iz7NG8jyPmqhp0vibYcThoGSbWAXp2jxPDRuxhI5EmlSOjxIKXbG2nUzIWNjYLNaA0DicdU4o50BTR9TbywnFJA3qFjhe1nQyONUEtmUM0qNEAtyUUsI5rTK6MsasXx1GeCXavRB/ivYi+eWeKcGNnUICtZfAIPoRdAm0g2k2eOdrtCbHJub8JDnFvmMm3T9En0wFxAJJyMHN8hWrt7G9pabcdwB5cv37qqaTKTKwcwePkPqtmOVws5+eNTaLrdcuKiL1helGGjtpTCmSxjkwpXK0COqRmVYKJiQ0CsVGtEAJDGNuFy6FSxKaycAgeKJFxxrGNUwCRkRuws2wLmZuFK0LJBhIo07Cp7MrEQ5uViqirPnwLC1dRhTNjQiAbYpIokU2FE08GUaQDZPRUyfUVOoaKBOaaJFQoOoYuCcQsS6mwmMT1YSCWhdkLhjl2SrLBpWrz7/VaivDHKBfY4td5NcPzA+a9EcqZqhkkmkaRvhcHMdGRcFgGbeeUE8mlM08bB8rf8Hn3+ntI2So3OyIxdo/qJsD9VeNe1B7S2GAXmdm4+w3r6pH2RoRDUTRtyBtIJ4lrsi/tj2Vlr6N7dz4xd7ufEj2WfLJOdnQwRax0IJNMq2jcZ2Ndx2vebk+qFpayta7xVALeFmuDh6ItunTOaf52yXc07g4t8I4h+Ln9iy5GimzB3rZJwXb3FzvE2+AMXFh6+iLa16ifH+7xj+g7SSsAD724HmL9bqLUu0UpyMdOhTHsvpTQ4tcNwvdoda4Ci7ZaH4m7BZmSQOZ5JCdj9aKbLqdfJ4RK0N5G+23vfKaUVJWiz2ytf5B17H1QZ0iQAbKhsU3i32c7IIwL7d2Pl9ESzT57R7J2ySgAOJNpC/mQWty3ydf2WjZ11Rn0TfaYZq5NTRTb2bZ473HMSNFw4eRF1SezulvcDNsOxnhc7GHHqF6c6ieIJTIAHuYQ6xuDYFV2j0zuQwD/jdE5xA4F203v+CGOTWNfkrJgeR++IVlq5spSFzZNOWcNRtM9BkKSF1kQLiWbT3qw0b1UaGdWCin4J2Mz5OixxPU7XJbDKiWyrQKT7GEblMEBHIimPSMhuwsKatSFcNetPckGkgcsWysUKPAImIqONZFEimRoaM9mmRomFuVy1qljTEgWN6RN4VX6aWyb09QqsAaMeiI5kubIp43qmyDWKVSmRLY5FM2VVZaYXdJKyAh7rcbEj3P+E2Y9DVkBe5u07eBJHEgHI9CEGaNxN/Cnrkr8lOoaXu6t7b3OyM3PG5dJdXaghB4qi1soj1F4zYtYcm9hc4Hle6tun6gLcVmyLw6OOV7L+RrU9nYH5dE0nrayFkoIoW2a1rL8A1oF/lxXc+ubQGg+I8BzSnUq7urTOu8ji0W4HoFG7VIKKadsa6VFd4sLWOUy1OEXF+HXzVL07tzGZMDYOpLTnzscKas/wBQYw8NtvyLgFoF/chXGNKqJOVu0x9JpFPN8TWO/wCzQbH+ynoOzkERuyNoPUAX+aQS1ZeTNGQ1x4tyBjkUbpnaLeCCbObhwvwKl16itW10w3tBBZjh/SfoqZPdlIxxOXNYwHydk/gFZNZ1YOY65ztJ/BVbWINlHS2d8fjLTxy0W9kcUpUxGWThB/0JHBcEqJ5UTitKRyLJi8LprwgHFdtBV0MQ5pZcp9RThVSAEJhT1BCODoTlhaLgyrsjIKi6q8FRdN6OVaLMGr2H8L0ZG9KoHo6J6TNnQwoPa9bLkM2Rd70k1HaxR71ihDyOOmUohTExWULwmUZEwJzLKMlFSBCSNULZ22RH00yT3REEiXJAFhhnRkcyQQyoyOZLbog4EykZMlImUrJlEyDhkymD787HkUrjkRUL05JNdjYSa7RS+30To6mF5N+8Y9m4C1i0g2/+kVouoAhrSbOP9sH+3zRv+o9OXUrZB8UT2v8AYgg/X8FSdPrPtDiOI65v/a6Xkxpx6N2DM7th+u6hPFUyWDnCzS0tDnbY/Qe6J0501Y0OaXvGW4AbcgEHiccD8gmMeosLqfdY7t248wLeEE+5+SdbIWvsw7X8TtcY7mxHEHjYn5palSVo067N0ytjsjzdHO2wD7sY0mx+fTh+a5HZRzTuEc5+1csaHWyMcOq9A01gDLNmkZgN2uPeANHCxffzXVS7kaiR3AWbsZzvkgJlr2wdJeUjzTWqv+GIiPetkPwsLSd1jY2Lb9Frs06Uyve8Fjdniuc3xtv55KvNVDBuc82dJY3c7xOF8nKqdfXsETyOLjxHE2J/NBJ2qLS1d2BV+rEh9j95tut/CPqPmu6qoc4N3G+0BoHIAcgkVCTJKAPhad7va1voE2kKPXVUYs03JkEhULip3BRlqZETqQgIiJaEV13DEbqMi6DYWIhkK6pKdMBAoimQxRpjTEhAnCljqExMS8Y/ppkfHMq5FVI6GpQS7HQVDxsy7EqVNqFIydDQewx71YhQ9Yr1K3KrIUJIVuSZCySoxCNuKGmctukUErrqBETnKaAocRoqmiKBg6h9PGTgKx0OiYu8/wDkfmouzlFxeRwwPVWIBYss3dI6HG4yraQD/tEXQ/MqCfRvuH2d+acBdAJcXL8j54Mb+isCNzTZwsUZAm1RSh4sePI9EHTUh3WW/FLYwZcXx/0CdpWA0rgRe5aPxXjdYx0D7fYN9p524EL3fW9P72B8Y+K12f8AZuR9F5RqdMHghwuDy5tcE7Ivjav7K4z+WLr1MWU9f4geAti9sYXoOnaeypha6+1/G98n1XktRA6M9RnjkhPdC7UOhAbfAJKXPHsriaMeXR1IuVf2VnFtkhI433OHtgrqj7N1JNi/aRg3cTf0KTydtHg4NxcO43wL4+i07ta+5IdYcb88/v8ABL0kPeSBYtcgbTQkOdufbxWyR19V5xV1JeQ1gu4m21t8nyCM1rX5KgloF7nHO6f9gtKjjeDL/wAzw4MJyIz0H5psIUv5ZkzZbtrxEOlaMaeLx271+X25dGoeUZVs1aAtJa4WIVZnZlU0I2BSuEQYVn8OrSC3I4gioGZXMdOjKeAqNEj2wylCOAUMUanBshTH/GDVDEDJhMZ3JdUIrsCUaOBOQp4K4oEruBuUxRMspjuCpJTWkJKT0jE9oWItQNmGtbhYiGswsUom55vWAtPlyKDdMn1TTbgQf2VXHxkGxSoOzRONHRkWNcuC1aacogQxjUfRxoKDKbUrLIWhiotOiMtH7n+yPKW6HL4S3plMiVz8iqR1MT/YjAu2lahgc/4Rfz5fNMoNPaPiO49OSdi4859iM/Jx4/u2CMYTwF1PDTWuefBMLAcMKBso37OoLgeVxxC6OLjqHf2cjkcuWRV4gN2Cql2t7Oi5mYLxuzK0fYd98eXVXOqg6KCnk+yc+qbkxqcaZmw55YZ7I8Y1HRScqv1Om2Ju23RzSRY+i9p17QA0GSIXZkvjGdnUt8vLkqbXULXcgVypOWKVM9Hj+PPDaJ58aG3CTpg4KKptHc6w3G188LKynSWk5CKpdKYOX4m3yV/qGT9KvwQaHpMYwBudzda9l32hqv4eema3+s2+SsFPGGhVLtHH39XCByI+XEosU3KaYvkYoxxNHolTGamlEgH82MXPV0fMeypDjlem9mYNosctIGPUZVf1TsXKHOMRDmkkhpwQDyut+TH3aOHiy9dlTapWNRVZpM0P/IwtHXi35qONqXqO2s2xqLhYo2NRkLEuRrwem2haeiNije1KNtoClQkoumEjVEYkUTNmfQubEioIkQyFStYtFnOoJpGJ5SNSaB1kayqsoR9IdhyxLRVrFYuwJ9MkGoaf4zZXuKDGQgqrTbkkfL8lz1kqR2Hibj0UkaYSsGjOJVvjpbckUynHRak7RjaaZVafSS1HNprJ9/D34C56DKPo9DJzILN+7zPr0CJRbKcq9EejUMr3gsFgPic7DbdPNW2n01rcnxnz4ewRMUbWizQABgALZd+wmrDBO2rYmfJm1V0jrA/dlw5/7yuS8DyWXummdyMugdQa629vxsO9vQkcR7i490aQoJbokLl2iaCZsjGvb8LhcX4jqD58kuqrMJcTZg3FxPJtslR6ZO2Eyse4NYT3jC4gAbsOA9xf/wBFVbtjrjpR3UQ/lXG+TN5LcgPu/VFGLsVkyLW36R1/aueVxEB7uIYBADpHjqb8B5fiupNN7+MSNAjkPIWDHuHH/rwPl9UlooOfNOaWRzcA2PTkVMuGE46tAcflZcM90/8AhXpy+MkHiDYg4IKxlYfRPO0cH8tsrm7H7gwm9xILEj3FvxSVkF8rh5sfxScWey4vI+fGprqzqeu2tycpdoEDpaxhte1yfLH6ooUhe/qBhrepV10PSmUUbppbB5F3HmL8GBP4sG5dfRl/yGaMMbv1jreYmWZtdORdjHGwsOZtyXGha2+UlkrBHKLiwBDTb1KrGk6m6WofMQbHAHRo4D99SrXTTB3KxwQeYIXVar085CTk7T6Gc8DXizgCPPKrVf2Oabuids/pOW/orQ046LsJbVmlOjzOs0maH42G33m5C5p3r017A4WIB9Un1Ds3E/LfA7q3CVLHfhox5q9KvdDuUtdTvhdsf7HkQhRMkOFGtZk1ZtzVxZbdIoi4qJUJnkskuo3yqJ8iFklRC6CzVLbatK3zqD+LypZHGyxtqViSCtWItgfjPVI+C0GZUdPIimLmZF2drE+iCrpsbh7qKmp9x8hxtxTNzbtK5o2bW35nPstfF/d0/oxc2oK19k0AEfBvqW8R69VN3t0OX/5Wu8C2tnKSbCCVzdRbwuDIqsmpMRdQuBHArtj8eY9VhN0Vi5QOGz245XZe12OajLFoxIrA/cL9V07vBhLY9FIFiLqwAdcrA6/64RqYtxRVpNDIN23Un+3EixFjyKs3ssMQKLcD40U2ri3MMFQCBe8UwF+7dwuRzHVKmUrw/utu5/LbkOb94Hp5r0V9K22QD7IGakaL7AA7AIAzt8umQs2fjwzd+M6HD5mTjJx9X0I6GKKmPeOb30o4Z2xtPPbzPqVLqFS6sDQ9gjjad1gS4uPAchYZKKkoybY/BEQUJ6J8IRxqombLlnmlc3YvpqVrcNFh5JtRQm6lgorJhFFZRskIkzBgLoFaBWyhHm12FGF2FRaF+sacyZpDhnkeYPkvPZ4Sx7mHi02XpUr/ABWVF7Tw7Jy7k4X9xx/sl5F1YzG+6ANqilXL50HUVKSPo4qZktnqVzVVCT1VQoEgyasQZrMoJ8t1qmbcqgkh3HJcBYpoo8BYh2HfGj06nqk1ppbrFix5TXh8DhJ+q0991ixbuJFfHf5OT/kJt5tfpHG6yje7mFixPMyRkcvG3kbeq6L7haWKBLsiExbniBgopktxcc1ixRkZ1vWb1ixQBpGFY5q0sV2JaRgH6LuyxYisCjcl7LmHhnj+ixYiXhX+xM2EFdtiWLFTY+KRpwty9F01pWLFC0jbQtkLFigRuy0VixUQCcfGbpH2up90O/m0g+3ArFiuXhIelGlKAqCsWLKbRZUuSWsesWKFoEa9HUTsrSxUWP45sBYsWKqQ6z//2Q==" alt="Amit Verma" class="review-author-img">
+                            <div>
+                                <h4>Amit Verma</h4>
+                                <p>Director, Verma Career Academy – Delhi</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="review-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack -->
+    <section class="section tech-stack">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our <span class="text-gradient">Tech Stack</span></h2>
+                <p class="section-subtitle">Powered by the latest technologies.</p>
+            </div>
+            
+            <div class="tech-logos">
+                <div class="tech-logo">
+                    <i class="fab fa-html5"></i>
+                    <span>HTML5</span>
+                </div>
+                <div class="tech-logo">
+                    <i class="fab fa-css3-alt"></i>
+                    <span>CSS3</span>
+                </div>
+                <div class="tech-logo">
+                    <i class="fab fa-js"></i>
+                    <span>JavaScript</span>
+                </div>
+                <div class="tech-logo">
+                    <i class="fab fa-react"></i>
+                    <span>React</span>
+                </div>
+                <div class="tech-logo">
+                    <i class="fab fa-vuejs"></i>
+                    <span>Vue.js</span>
+                </div>
+                <div class="tech-logo">
+                    <i class="fab fa-node-js"></i>
+                    <span>Node.js</span>
+                </div>
+                <div class="tech-logo">
+                    <i class="fab fa-python"></i>
+                    <span>Python</span>
+                </div>
+                <div class="tech-logo">
+                    <i class="fas fa-database"></i>
+                    <span>MongoDB</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Add this section after the Tech Stack section, before the CTA section -->
+
+<!-- Trusted By Brands -->
+<section class="section trusted-by">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Trusted By <span class="text-gradient">Visionaries</span></h2>
+            <p class="section-subtitle">Partnering with industry leaders to build the future</p>
+        </div>
+        
+        <div class="trusted-container">
+            <!-- Left gradient fade -->
+            <div class="fade-left"></div>
+            
+            <!-- Brands carousel -->
+            <div class="brands-carousel">
+                <div class="brands-track">
+                    <!-- First set of logos -->
+                    <div class="brand-logo" data-brand="google">
+                        <div class="brand-icon">
+                            <i class="fab fa-google"></i>
+                        </div>
+                        <span class="brand-name">Google</span>
+                        <div class="brand-glow"></div>
+                    </div>
+                    
+                    <div class="brand-logo" data-brand="aws">
+                        <div class="brand-icon">
+                            <i class="fab fa-aws"></i>
+                        </div>
+                        <span class="brand-name">AWS</span>
+                        <div class="brand-glow"></div>
+                    </div>
+                    
+                    <div class="brand-logo" data-brand="openai">
+                        <div class="brand-icon">
+                            <i class="fab fa-twitter"></i>
+                        </div>
+                        <span class="brand-name">Twitter</span>
+                        <div class="brand-glow"></div>
+                    </div>
+                    
+                    <div class="brand-logo" data-brand="deloitte">
+                        <div class="brand-icon">
+                            <i class="fab fa-facebook"></i>
+                        </div>
+                        <span class="brand-name">Facebook</span>
+                        <div class="brand-glow"></div>
+                    </div>
+                    
+                    <div class="brand-logo" data-brand="canva">
+                        <div class="brand-icon">
+                            <i class="fab fa-google-play"></i>
+                        </div>
+                        <span class="brand-name">Google Play</span>
+                        <div class="brand-glow"></div>
+                    </div>
+                    
+                    <div class="brand-logo" data-brand="github">
+                        <div class="brand-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <span class="brand-name">GitHub</span>
+                        <div class="brand-glow"></div>
+                    </div>
+                    
+                    <div class="brand-logo" data-brand="lovable">
+                        <div class="brand-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <span class="brand-name">Lovable</span>
+                        <div class="brand-glow"></div>
+                    </div>
+                    
+                    <div class="brand-logo" data-brand="spotify">
+                        <div class="brand-icon">
+                            <i class="fab fa-spotify"></i>
+                        </div>
+                        <span class="brand-name">Spotify</span>
+                        <div class="brand-glow"></div>
+                    </div>
+                    
+                    <div class="brand-logo" data-brand="figma">
+                        <div class="brand-icon">
+                            <i class="fab fa-figma"></i>
+                        </div>
+                        <span class="brand-name">Figma</span>
+                        <div class="brand-glow"></div>
+                    </div>
+                    
+                    <div class="brand-logo" data-brand="slack">
+                        <div class="brand-icon">
+                            <i class="fab fa-slack"></i>
+                        </div>
+                        <span class="brand-name">Slack</span>
+                        <div class="brand-glow"></div>
+                    </div>
+                    
+                    <!-- Duplicate set for seamless looping -->
+                    <div class="brand-logo" data-brand="google">
+                        <div class="brand-icon">
+                            <i class="fab fa-google"></i>
+                        </div>
+                        <span class="brand-name">Google</span>
+                        <div class="brand-glow"></div>
+                    </div>
+                    
+                    <div class="brand-logo" data-brand="aws">
+                        <div class="brand-icon">
+                            <i class="fab fa-aws"></i>
+                        </div>
+                        <span class="brand-name">AWS</span>
+                        <div class="brand-glow"></div>
+                    </div>
+                    
+                    <div class="brand-logo" data-brand="openai">
+                        <div class="brand-icon">
+                            <i class="fab fa-twitter"></i>
+                        </div>
+                        <span class="brand-name">Twitter</span>
+                        <div class="brand-glow"></div>
+                    </div>
+                    
+                    <div class="brand-logo" data-brand="deloitte">
+                        <div class="brand-icon">
+                            <i class="fab fa-facebook"></i>
+                        </div>
+                        <span class="brand-name">Facebook</span>
+                        <div class="brand-glow"></div>
+                    </div>
+                    
+                    <div class="brand-logo" data-brand="canva">
+                        <div class="brand-icon">
+                            <i class="fab fa-google-play"></i>
+                        </div>
+                        <span class="brand-name">Google Play</span>
+                        <div class="brand-glow"></div>
+                    </div>
+                    
+                    <div class="brand-logo" data-brand="github">
+                        <div class="brand-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <span class="brand-name">GitHub</span>
+                        <div class="brand-glow"></div>
+                    </div>
+                    
+                    <div class="brand-logo" data-brand="lovable">
+                        <div class="brand-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <span class="brand-name">Lovable</span>
+                        <div class="brand-glow"></div>
+                    </div>
+                    
+                    <div class="brand-logo" data-brand="spotify">
+                        <div class="brand-icon">
+                            <i class="fab fa-spotify"></i>
+                        </div>
+                        <span class="brand-name">Spotify</span>
+                        <div class="brand-glow"></div>
+                    </div>
+                    
+                    <div class="brand-logo" data-brand="figma">
+                        <div class="brand-icon">
+                            <i class="fab fa-figma"></i>
+                        </div>
+                        <span class="brand-name">Figma</span>
+                        <div class="brand-glow"></div>
+                    </div>
+                    
+                    <div class="brand-logo" data-brand="slack">
+                        <div class="brand-icon">
+                            <i class="fab fa-slack"></i>
+                        </div>
+                        <span class="brand-name">Slack</span>
+                        <div class="brand-glow"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Right gradient fade -->
+            <div class="fade-right"></div>
+        </div>
+        
+        <div class="trusted-stats">
+            <div class="trusted-stat">
+                <div class="stat-number" data-count="50">0</div>
+                <div class="stat-label">Global Brands</div>
+            </div>
+            <div class="trusted-stat">
+                <div class="stat-number" data-count="100">0</div>
+                <div class="stat-label">% Client Retention</div>
+            </div>
+            <div class="trusted-stat">
+                <div class="stat-number" data-count="24">0</div>
+                <div class="stat-label">/7 Support</div>
+            </div>
+        </div>
+        
+        <p class="trusted-quote">"WebX delivers exceptional quality that scales with our vision." — <span class="quote-author">Ananya Mehta, Google Cloud</span></p>
+    </div>
+</section>
+
+    <!-- CTA Section -->
+    <section class="section cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to Elevate Your Digital Presence?</h2>
+                <p class="cta-text">We turn ambitious ideas into interactive realities. Let's build something amazing together.</p>
+                <a href="contact.html" class="btn btn-primary btn-large">
+                    <span>Start Your Project</span>
+                    <i class="fas fa-rocket"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+              <div class="footer-col">
+    <a href="index.html" class="footer-logo">
+        <!-- Your WebX PNG Logo -->
+        <img src="webx-logo-transparent.png" alt="WebX" class="footer-logo-image">       
+    </a>
+                    <p class="footer-text">Where Code Meets Creativity. We build digital experiences that make noise and drive results.</p>
+                    <div class="social-links">
+                        <a href="https://x.com/web_x_web" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.instagram.com/webx.web" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://github.com/webx-studio" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/ishan-maitra" class="social-link">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-title">Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Web Development</a></li>
+                        <li><a href="services.html">AI Development</a></li>
+                        <li><a href="services.html">E-commerce</a></li>
+                        <li><a href="services.html">UI/UX Design</a></li>
+                        <li><a href="services.html">SEO & Marketing</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-title">Contact Info</h3>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>145 Pujali Trunk Road, Budge Budge, Kolkata - 700138, Wb, India</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>+91 9674026774</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>build.with.webx@gmail.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2026 WebX. All rights reserved. Built with ❤️ and premium code.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

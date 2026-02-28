@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | WebX — Premium Web Development Portfolio</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+</head>
+<body class="projects-page">
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Particles Background -->
+    <div id="particles-js"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="webx-logo-transparent.png" alt="WebX" class="logo-image">
+                <span class="logo-text-sr">WebX</span>
+                <div class="logo-glow-png"></div>
+                <div class="logo-glow-pulse-png"></div>
+            </a>
+            
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="projects.html" class="nav-link active">Projects</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Loader -->
+    <div class="page-loader">
+        <div class="loader-content">
+            <div class="loader-logo">
+                <span>W</span>
+                <span>E</span>
+                <span>B</span>
+                <span class="neon-loader">X</span>
+            </div>
+            <div class="loader-progress">
+                <div class="progress-bar"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="projects-hero">
+        <div class="container">
+            <div class="projects-hero-content">
+                <!-- Animated Grid Background -->
+                <div class="hero-grid-animation">
+                    <div class="grid-line"></div>
+                    <div class="grid-line"></div>
+                    <div class="grid-line"></div>
+                    <div class="grid-line"></div>
+                    <div class="grid-dot"></div>
+                    <div class="grid-dot"></div>
+                    <div class="grid-dot"></div>
+                </div>
+                
+                <!-- Floating Code Elements -->
+                <div class="floating-code">
+                    <div class="code-snippet">
+                        <span class="code-line"><span class="code-tag">&lt;div</span> <span class="code-attr">class=</span><span class="code-value">"innovation"</span><span class="code-tag">&gt;</span></span>
+                        <span class="code-line">  <span class="code-tag">&lt;h1&gt;</span>Building Tomorrow<span class="code-tag">&lt;/h1&gt;</span></span>
+                        <span class="code-line"><span class="code-tag">&lt;/div&gt;</span></span>
+                    </div>
+                </div>
+                
+                <!-- Main Content -->
+                <div class="hero-text">
+                    <div class="hero-badge">
+                        <i class="fas fa-star"></i>
+                        <span>Featured Work</span>
+                    </div>
+                    
+                    <h1 class="hero-title">
+                        Where <span class="text-gradient">Ideas</span> Become
+                        <br>
+                        <span class="text-gradient">Digital Reality</span>
+                    </h1>
+                    
+                    <p class="hero-subtitle">
+                        Explore our portfolio of premium web development projects. Each piece tells a story of innovation, 
+                        creativity, and technical excellence.
+                    </p>
+                    
+                    <!-- Project Stats -->
+                    <div class="project-stats">
+                        <div class="stat">
+                            <div class="stat-number" data-count="150">0</div>
+                            <div class="stat-label">Projects Delivered</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number" data-count="98">0</div>
+                            <div class="stat-label">Client Satisfaction</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number" data-count="40">0</div>
+                            <div class="stat-label">Awards Won</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Interactive Filter Preview -->
+                <div class="filter-preview">
+                    <div class="filter-tags">
+                        <button class="filter-tag active" data-filter="all">All Projects</button>
+                        <button class="filter-tag" data-filter="web">Web Development</button>
+                        <button class="filter-tag" data-filter="mobile">Mobile Apps</button>
+                        <button class="filter-tag" data-filter="ecommerce">E-commerce</button>
+                        <button class="filter-tag" data-filter="branding">Branding</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Explore Projects</span>
+        </div>
+    </section>
+
+   
+    <!-- Projects Grid (Masonry Style) -->
+    <section class="projects-grid-section">
+        <div class="container">
+            <div class="projects-masonry">
+                <!-- Project 1: Fintech Dashboard -->
+                <div class="project-item" data-category="web" data-tech="react" data-year="2025" data-popular="true">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6ULIH9ZAfcWL1LHsqoInXV85mjDPzr74emg&s" 
+                                 alt="Nexus Financial Dashboard" 
+                                 class="project-img">
+                            <div class="project-overlay">
+                                <div class="overlay-content">
+                                    <h3 class="project-title">Nexus Financial Dashboard</h3>
+                                    <p class="project-desc">Real-time analytics platform for financial institutions</p>
+                                    <div class="project-tech">
+                                        <span class="tech-tag">React</span>
+                                        <span class="tech-tag">D3.js</span>
+                                        <span class="tech-tag">Node.js</span>
+                                    </div>
+                                </div>
+                                <button class="view-project" data-project="nexus">
+                                    <span>View Details</span>
+                                    <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </div>
+                            <div class="project-badge">
+                                <i class="fas fa-crown"></i>
+                                <span>Featured</span>
+                            </div>
+                        </div>
+                        
+                        <div class="project-info">
+                            <div class="project-meta">
+                                <span class="project-category">Web Development</span>
+                                <span class="project-year">2025</span>
+                            </div>
+                            <h3 class="project-title">Nexus Financial Dashboard</h3>
+                            <p class="project-excerpt">A sophisticated dashboard for real-time financial data visualization and analysis.</p>
+                            <div class="project-stats">
+                                <div class="stat">
+                                    <i class="fas fa-chart-line"></i>
+                                    <span>300% ROI Increase</span>
+                                </div>
+                                <div class="stat">
+                                    <i class="fas fa-bolt"></i>
+                                    <span>0.8s Load Time</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="project-glow"></div>
+                    </div>
+                </div>
+                
+                <!-- Project 2: Sustainable E-commerce -->
+                <div class="project-item" data-category="ecommerce" data-tech="shopify" data-year="2025" data-popular="true">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://repository-images.githubusercontent.com/456963513/82528385-a73f-488f-9003-513321283a6b" 
+                                 alt="EcoShop Sustainable Store" 
+                                 class="project-img">
+                            <div class="project-overlay">
+                                <div class="overlay-content">
+                                    <h3 class="project-title">EcoShop Sustainable Store</h3>
+                                    <p class="project-desc">Zero-waste e-commerce platform with AR try-on</p>
+                                    <div class="project-tech">
+                                        <span class="tech-tag">Shopify Plus</span>
+                                        <span class="tech-tag">Three.js</span>
+                                        <span class="tech-tag">AR</span>
+                                    </div>
+                                </div>
+                                <button class="view-project" data-project="ecoshop">
+                                    <span>View Details</span>
+                                    <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="project-info">
+                            <div class="project-meta">
+                                <span class="project-category">E-commerce</span>
+                                <span class="project-year">2025</span>
+                            </div>
+                            <h3 class="project-title">EcoShop Sustainable Store</h3>
+                            <p class="project-excerpt">Innovative e-commerce platform featuring AR product visualization.</p>
+                            <div class="project-stats">
+                                <div class="stat">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    <span>45% Conversion Rate</span>
+                                </div>
+                                <div class="stat">
+                                    <i class="fas fa-leaf"></i>
+                                    <span>Carbon Neutral</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="project-glow"></div>
+                    </div>
+                </div>
+                
+                <!-- Project 3: Fitness App -->
+                <div class="project-item" data-category="mobile" data-tech="react" data-year="2025" data-popular="false">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://images.ctfassets.net/lzny33ho1g45/3L77mMruOrEOWxyDmcKkEp/2e1d7aff0d998602ddaa18fad2bb75fb/image2.jpg?fm=webp" 
+                                 alt="Zenith Fitness App" 
+                                 class="project-img">
+                            <div class="project-overlay">
+                                <div class="overlay-content">
+                                    <h3 class="project-title">Zenith Fitness App</h3>
+                                    <p class="project-desc">AI-powered personal training mobile application</p>
+                                    <div class="project-tech">
+                                        <span class="tech-tag">React Native</span>
+                                        <span class="tech-tag">AI/ML</span>
+                                        <span class="tech-tag">HealthKit</span>
+                                    </div>
+                                </div>
+                                <button class="view-project" data-project="zenith">
+                                    <span>View Details</span>
+                                    <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="project-info">
+                            <div class="project-meta">
+                                <span class="project-category">Mobile App</span>
+                                <span class="project-year">2025</span>
+                            </div>
+                            <h3 class="project-title">Zenith Fitness App</h3>
+                            <p class="project-excerpt">AI-driven fitness companion with personalized workout plans.</p>
+                            <div class="project-stats">
+                                <div class="stat">
+                                    <i class="fas fa-download"></i>
+                                    <span>500K+ Downloads</span>
+                                </div>
+                                <div class="stat">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.9 App Store</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="project-glow"></div>
+                    </div>
+                </div>
+                
+                <!-- Project 4: Brand Identity -->
+                <div class="project-item" data-category="branding" data-tech="vue" data-year="2025" data-popular="false">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://cdn.dribbble.com/userupload/10754352/file/original-60d2dee8b1e626b9e98ff748ce36ba58.png?resize=400x0" 
+                                 alt="Aura Brand Identity" 
+                                 class="project-img">
+                            <div class="project-overlay">
+                                <div class="overlay-content">
+                                    <h3 class="project-title">Aura Brand Identity</h3>
+                                    <p class="project-desc">Complete brand system for luxury skincare line</p>
+                                    <div class="project-tech">
+                                        <span class="tech-tag">Branding</span>
+                                        <span class="tech-tag">Vue.js</span>
+                                        <span class="tech-tag">GSAP</span>
+                                    </div>
+                                </div>
+                                <button class="view-project" data-project="aura">
+                                    <span>View Details</span>
+                                    <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="project-info">
+                            <div class="project-meta">
+                                <span class="project-category">Branding</span>
+                                <span class="project-year">2025</span>
+                            </div>
+                            <h3 class="project-title">Aura Brand Identity</h3>
+                            <p class="project-excerpt">Complete visual identity system for premium skincare brand.</p>
+                            <div class="project-stats">
+                                <div class="stat">
+                                    <i class="fas fa-chart-bar"></i>
+                                    <span>200% Brand Recall</span>
+                                </div>
+                                <div class="stat">
+                                    <i class="fas fa-award"></i>
+                                    <span>Design Award 2025</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="project-glow"></div>
+                    </div>
+                </div>
+                
+                <!-- Project 5: SaaS Platform -->
+                <div class="project-item" data-category="web" data-tech="node" data-year="2025" data-popular="true">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://d3lkc3n5th01x7.cloudfront.net/wp-content/uploads/2023/12/04004703/AI-in-Project-Management-01-1.png" 
+                                 alt="Flow SaaS Platform" 
+                                 class="project-img">
+                            <div class="project-overlay">
+                                <div class="overlay-content">
+                                    <h3 class="project-title">Flow SaaS Platform</h3>
+                                    <p class="project-desc">Project management SaaS with AI automation</p>
+                                    <div class="project-tech">
+                                        <span class="tech-tag">Node.js</span>
+                                        <span class="tech-tag">React</span>
+                                        <span class="tech-tag">MongoDB</span>
+                                    </div>
+                                </div>
+                                <button class="view-project" data-project="flow">
+                                    <span>View Details</span>
+                                    <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="project-info">
+                            <div class="project-meta">
+                                <span class="project-category">Web Development</span>
+                                <span class="project-year">2025</span>
+                            </div>
+                            <h3 class="project-title">Flow SaaS Platform</h3>
+                            <p class="project-excerpt">Enterprise-grade project management with AI-driven insights.</p>
+                            <div class="project-stats">
+                                <div class="stat">
+                                    <i class="fas fa-users"></i>
+                                    <span>10K+ Teams</span>
+                                </div>
+                                <div class="stat">
+                                    <i class="fas fa-robot"></i>
+                                    <span>AI Automation</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="project-glow"></div>
+                    </div>
+                </div>
+                
+                <!-- Project 6: AR Museum -->
+                <div class="project-item" data-category="uiux" data-tech="three" data-year="2025" data-popular="false">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://assets.awwwards.com/awards/gallery/2022/03/foam_talent_white-2-c.jpg" 
+                                 alt="ArtVerse AR Museum" 
+                                 class="project-img">
+                            <div class="project-overlay">
+                                <div class="overlay-content">
+                                    <h3 class="project-title">ArtVerse AR Museum</h3>
+                                    <p class="project-desc">Immersive virtual museum with AR exhibitions</p>
+                                    <div class="project-tech">
+                                        <span class="tech-tag">Three.js</span>
+                                        <span class="tech-tag">WebGL</span>
+                                        <span class="tech-tag">WebXR</span>
+                                    </div>
+                                </div>
+                                <button class="view-project" data-project="artverse">
+                                    <span>View Details</span>
+                                    <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="project-info">
+                            <div class="project-meta">
+                                <span class="project-category">UI/UX Design</span>
+                                <span class="project-year">2025</span>
+                            </div>
+                            <h3 class="project-title">ArtVerse AR Museum</h3>
+                            <p class="project-excerpt">Virtual reality museum experience with interactive exhibits.</p>
+                            <div class="project-stats">
+                                <div class="stat">
+                                    <i class="fas fa-vr-cardboard"></i>
+                                    <span>AR/VR Experience</span>
+                                </div>
+                                <div class="stat">
+                                    <i class="fas fa-eye"></i>
+                                    <span>1M+ Views</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="project-glow"></div>
+                    </div>
+                </div>
+                
+                <!-- Project 7: Healthcare Portal -->
+                <div class="project-item" data-category="web" data-tech="vue" data-year="2025" data-popular="false">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="data:image/jpeg;base64,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" 
+                                 alt="MediCare Portal" 
+                                 class="project-img">
+                            <div class="project-overlay">
+                                <div class="overlay-content">
+                                    <h3 class="project-title">MediCare Portal</h3>
+                                    <p class="project-desc">Healthcare management system for clinics</p>
+                                    <div class="project-tech">
+                                        <span class="tech-tag">Vue.js</span>
+                                        <span class="tech-tag">Python</span>
+                                        <span class="tech-tag">PostgreSQL</span>
+                                    </div>
+                                </div>
+                                <button class="view-project" data-project="medicare">
+                                    <span>View Details</span>
+                                    <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="project-info">
+                            <div class="project-meta">
+                                <span class="project-category">Web Development</span>
+                                <span class="project-year">2021</span>
+                            </div>
+                            <h3 class="project-title">MediCare Portal</h3>
+                            <p class="project-excerpt">HIPAA-compliant healthcare management platform.</p>
+                            <div class="project-stats">
+                                <div class="stat">
+                                    <i class="fas fa-hospital"></i>
+                                    <span>50+ Clinics</span>
+                                </div>
+                                <div class="stat">
+                                    <i class="fas fa-shield-alt"></i>
+                                    <span>HIPAA Compliant</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="project-glow"></div>
+                    </div>
+                </div>
+                
+                <!-- Project 8: Food Delivery -->
+                <div class="project-item" data-category="mobile" data-tech="react" data-year="2025" data-popular="false">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                                 alt="Freshly Food Delivery" 
+                                 class="project-img">
+                            <div class="project-overlay">
+                                <div class="overlay-content">
+                                    <h3 class="project-title">Freshly Food Delivery</h3>
+                                    <p class="project-desc">Hyperlocal food delivery with real-time tracking</p>
+                                    <div class="project-tech">
+                                        <span class="tech-tag">React Native</span>
+                                        <span class="tech-tag">Firebase</span>
+                                        <span class="tech-tag">Maps API</span>
+                                    </div>
+                                </div>
+                                <button class="view-project" data-project="freshly">
+                                    <span>View Details</span>
+                                    <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="project-info">
+                            <div class="project-meta">
+                                <span class="project-category">Mobile App</span>
+                                <span class="project-year">2022</span>
+                            </div>
+                            <h3 class="project-title">Freshly Food Delivery</h3>
+                            <p class="project-excerpt">On-demand food delivery platform with live tracking.</p>
+                            <div class="project-stats">
+                                <div class="stat">
+                                    <i class="fas fa-clock"></i>
+                                    <span>15min Avg Delivery</span>
+                                </div>
+                                <div class="stat">
+                                    <i class="fas fa-utensils"></i>
+                                    <span>200+ Restaurants</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="project-glow"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Load More Button -->
+            <div class="load-more-container">
+                <button class="btn btn-outline" id="loadMoreProjects">
+                    <span>Load More Projects</span>
+                    <i class="fas fa-plus"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modal -->
+    <div class="project-modal" id="projectModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-container">
+            <button class="modal-close">
+                <i class="fas fa-times"></i>
+            </button>
+            
+            <div class="modal-content">
+                <!-- Content will be loaded dynamically -->
+            </div>
+            
+            <div class="modal-navigation">
+                <button class="nav-btn prev-project">
+                    <i class="fas fa-chevron-left"></i>
+                    <span>Previous</span>
+                </button>
+                <button class="nav-btn next-project">
+                    <span>Next</span>
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <!-- CTA Section -->
+    <section class="cta projects-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to Start Your Project?</h2>
+                <p class="cta-text">Let's create something amazing together. Our team is ready to bring your vision to life.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary btn-large">
+                        <span>Start a Project</span>
+                        <i class="fas fa-rocket"></i>
+                    </a>
+                    <a href="services.html" class="btn btn-outline btn-large">
+                        <span>View Services</span>
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="footer-logo">
+                        <img src="webx-logo-transparent.png" alt="WebX" class="footer-logo-image">
+                        <span class="footer-logo-text-sr">WebX</span>
+                        <div class="footer-logo-glow"></div>
+                    </a>
+                    
+                    <p class="footer-text">Where Code Meets Creativity. We build digital experiences that make noise and drive results.</p>
+                    
+                     <div class="social-links">
+                        <a href="https://x.com/web_x_web" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.instagram.com/webx.web" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://github.com/webx-studio" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/ishan-maitra" class="social-link">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-title">Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Web Development</a></li>
+                        <li><a href="services.html">Mobile Apps</a></li>
+                        <li><a href="services.html">E-commerce</a></li>
+                        <li><a href="services.html">UI/UX Design</a></li>
+                        <li><a href="services.html">SEO & Marketing</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-title">Contact Info</h3>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>145 Pujali Trunk Road, Budge Budge, Kolkata - 700138, WB, India</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>+91 96740 26774</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>build.with.webx@gmail.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2026 WebX. All rights reserved. Built with ❤️ and premium code.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"></script>
+    <script src="script.js"></script>
+    <script src="projects-animations.js"></script>
+</body>
+</html>

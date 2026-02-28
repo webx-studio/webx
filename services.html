@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | WebX — Premium Web Development Solutions</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+</head>
+<body class="services-page">
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Particles Background -->
+    <div id="particles-js"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="webx-logo-transparent.png" alt="WebX" class="logo-image">
+                <span class="logo-text-sr">WebX</span>
+                <div class="logo-glow-png"></div>
+                <div class="logo-glow-pulse-png"></div>
+            </a>
+            
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="services.html" class="nav-link active">Services</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Loader -->
+    <div class="page-loader">
+        <div class="loader-content">
+            <div class="loader-logo">
+                <span>W</span>
+                <span>E</span>
+                <span>B</span>
+                <span class="neon-loader">X</span>
+            </div>
+            <div class="loader-progress">
+                <div class="progress-bar"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="services-hero">
+        <div class="container">
+            <div class="services-hero-content">
+                <!-- Animated Background Elements -->
+                <div class="hero-floating-shapes">
+                    <div class="floating-shape shape-1"></div>
+                    <div class="floating-shape shape-2"></div>
+                    <div class="floating-shape shape-3"></div>
+                    <div class="floating-shape shape-4"></div>
+                </div>
+                
+                <!-- Binary Code Animation -->
+                <div class="binary-code-bg">
+                    <div class="binary-line"></div>
+                    <div class="binary-line"></div>
+                    <div class="binary-line"></div>
+                    <div class="binary-line"></div>
+                </div>
+                
+                <!-- Main Content -->
+                <div class="hero-text-content">
+                    <div class="hero-tagline">Your Vision → Our Execution</div>
+                    <h1 class="hero-title">
+                        <span class="text-gradient">Premium</span> Web & AI Solutions
+                        <br>
+                        That <span class="text-gradient">Convert</span> & <span class="text-gradient">Captivate</span>
+                    </h1>
+                    
+                    <p class="hero-subtitle">
+                        We don't just build websites—we craft digital experiences that blend cutting-edge technology 
+                        with breathtaking design. Every line of code is written with purpose, every pixel placed with precision.
+                    </p>
+                    
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <div class="stat-number" data-count="99">0</div>
+                            <div class="stat-label">Client Satisfaction</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number" data-count="40">0</div>
+                            <div class="stat-label">% Faster Load Times</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number" data-count="300">0</div>
+                            <div class="stat-label">% Avg. ROI Increase</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Interactive Service Preview -->
+                <div class="service-preview">
+                    <div class="preview-card active" data-service="web">
+                        <div class="preview-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <div class="preview-content">
+                            <h3>Web Development</h3>
+                            <p>Custom websites built with cutting-edge tech stacks</p>
+                        </div>
+                        <div class="preview-glow"></div>
+                    </div>
+                    
+                    <div class="preview-card" data-service="mobile">
+                        <div class="preview-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="preview-content">
+                            <h3>AI Tools</h3>
+                            <p>Intelligent AI solutions that adapt to user needs</p>
+                        </div>
+                        <div class="preview-glow"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Explore Services</span>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="services-grid-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our <span class="text-gradient">Core Services</span></h2>
+                <p class="section-subtitle">Premium code. Zero boring energy. Websites that slap harder than Monday deadlines.</p>
+            </div>
+            
+            <div class="services-grid">
+                <!-- Service 1: Web Development -->
+                <div class="service-card" data-service="web">
+                    <div class="service-card-inner">
+                        <div class="service-icon">
+                            <i class="fas fa-laptop-code"></i>
+                            <div class="icon-glow"></div>
+                        </div>
+                        
+                        <div class="service-content">
+                            <h3 class="service-title">Web Development</h3>
+                            <div class="service-tags">
+                                <span class="tag">React</span>
+                                <span class="tag">Vue.js</span>
+                                <span class="tag">Next.js</span>
+                                <span class="tag">WordPress</span>
+                            </div>
+                            
+                            <p class="service-description">
+                                Custom websites built with cutting-edge tech stacks. We craft performant, scalable, 
+                                and visually stunning digital experiences that convert visitors into customers.
+                            </p>
+                            
+                            <ul class="service-features">
+                                <li><i class="fas fa-check-circle"></i> Responsive & Mobile-First Design</li>
+                                <li><i class="fas fa-check-circle"></i> Progressive Web Apps (PWAs)</li>
+                                <li><i class="fas fa-check-circle"></i> E-commerce Solutions</li>
+                                <li><i class="fas fa-check-circle"></i> CMS Development</li>
+                                <li><i class="fas fa-check-circle"></i> API Integrations</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="service-footer">
+                            <div class="service-price">
+                                <span class="starting-from">Starting from</span>
+                                <span class="price">₹2999+</span>
+                            </div>
+                            <a href="contact.html" class="service-cta">
+                                <span>Get Started</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                        
+                        <div class="service-glow"></div>
+                    </div>
+                </div>
+                
+                <!-- Service 2: UI/UX Design -->
+                <div class="service-card" data-service="design">
+                    <div class="service-card-inner">
+                        <div class="service-icon">
+                            <i class="fas fa-paint-brush"></i>
+                            <div class="icon-glow"></div>
+                        </div>
+                        
+                        <div class="service-content">
+                            <h3 class="service-title">UI/UX Design</h3>
+                            <div class="service-tags">
+                                <span class="tag">Figma</span>
+                                <span class="tag">Adobe XD</span>
+                                <span class="tag">User Research</span>
+                                <span class="tag">Prototyping</span>
+                            </div>
+                            
+                            <p class="service-description">
+                                Design so clean it makes your screen shine. We create intuitive, beautiful interfaces 
+                                that users love to interact with.
+                            </p>
+                            
+                            <ul class="service-features">
+                                <li><i class="fas fa-check-circle"></i> User Research & Personas</li>
+                                <li><i class="fas fa-check-circle"></i> Wireframing & Prototyping</li>
+                                <li><i class="fas fa-check-circle"></i> Visual Design Systems</li>
+                                <li><i class="fas fa-check-circle"></i> User Testing</li>
+                                <li><i class="fas fa-check-circle"></i> Design Handoff</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="service-footer">
+                            <div class="service-price">
+                                <span class="starting-from">Starting from</span>
+                                <span class="price">₹3,999+</span>
+                            </div>
+                            <a href="contact.html" class="service-cta">
+                                <span>Get Started</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                        
+                        <div class="service-glow"></div>
+                    </div>
+                </div>
+                
+                <!-- Service 4: E-commerce Solutions -->
+                <div class="service-card" data-service="ecommerce">
+                    <div class="service-card-inner">
+                        <div class="service-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                            <div class="icon-glow"></div>
+                        </div>
+                        
+                        <div class="service-content">
+                            <h3 class="service-title">E-commerce Solutions</h3>
+                            <div class="service-tags">
+                                <span class="tag">Shopify</span>
+                                <span class="tag">WooCommerce</span>
+                                <span class="tag">Magento</span>
+                                <span class="tag">Custom</span>
+                            </div>
+                            
+                            <p class="service-description">
+                                Online stores designed to convert and captivate. We build e-commerce platforms that 
+                                drive sales and provide seamless shopping experiences.
+                            </p>
+                            
+                            <ul class="service-features">
+                                <li><i class="fas fa-check-circle"></i> Custom Store Development</li>
+                                <li><i class="fas fa-check-circle"></i> Payment Gateway Integration</li>
+                                <li><i class="fas fa-check-circle"></i> Inventory Management</li>
+                                <li><i class="fas fa-check-circle"></i> SEO Optimization</li>
+                                <li><i class="fas fa-check-circle"></i> Analytics & Reporting</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="service-footer">
+                            <div class="service-price">
+                                <span class="starting-from">Starting from</span>
+                                <span class="price">₹5,999+</span>
+                            </div>
+                            <a href="contact.html" class="service-cta">
+                                <span>Get Started</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                        
+                        <div class="service-glow"></div>
+                    </div>
+                </div>
+                
+               <!-- Service 5: AI Tools -->
+<div class="service-card" data-service="ai-tools">
+    <div class="service-card-inner">
+
+        <!-- Icon -->
+        <div class="service-icon">
+            <i class="fas fa-brain"></i>
+            <div class="icon-glow"></div>
+        </div>
+
+        <!-- Content -->
+        <div class="service-content">
+            <h3 class="service-title">AI Tools & Automation</h3>
+
+            <div class="service-tags">
+                <span class="tag">AI</span>
+                <span class="tag">Automation</span>
+                <span class="tag">Chatbots</span>
+                <span class="tag">Productivity</span>
+            </div>
+
+            <p class="service-description">
+                Supercharge your business with intelligent AI-powered tools.
+                We design smart systems that automate tasks, enhance productivity,
+                and deliver real-time insights.
+            </p>
+
+            <ul class="service-features">
+                <li><i class="fas fa-check-circle"></i> Custom AI Tool Development</li>
+                <li><i class="fas fa-check-circle"></i> AI Chatbots (Web & WhatsApp)</li>
+                <li><i class="fas fa-check-circle"></i> Workflow Automation</li>
+                <li><i class="fas fa-check-circle"></i> AI Analytics & Insights</li>
+                <li><i class="fas fa-check-circle"></i> API & AI Model Integration</li>
+            </ul>
+        </div>
+
+        <!-- Footer -->
+        <div class="service-footer">
+            <div class="service-price">
+                <span class="starting-from">Starting from</span>
+                <span class="price">₹6,999+</span>
+            </div>
+
+            <a href="contact.html" class="service-cta">
+                <span>Build with AI</span>
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+
+        <div class="service-glow"></div>
+    </div>
+</div>
+
+                
+                <!-- Service 6: Maintenance & Support -->
+                <div class="service-card" data-service="support">
+                    <div class="service-card-inner">
+                        <div class="service-icon">
+                            <i class="fas fa-headset"></i>
+                            <div class="icon-glow"></div>
+                        </div>
+                        
+                        <div class="service-content">
+                            <h3 class="service-title">Maintenance & Support</h3>
+                            <div class="service-tags">
+                                <span class="tag">24/7 Support</span>
+                                <span class="tag">Security</span>
+                                <span class="tag">Updates</span>
+                                <span class="tag">Monitoring</span>
+                            </div>
+                            
+                            <p class="service-description">
+                                Keep your digital assets running smoothly. We provide ongoing support, security updates, 
+                                and performance optimization.
+                            </p>
+                            
+                            <ul class="service-features">
+                                <li><i class="fas fa-check-circle"></i> 24/7 Technical Support</li>
+                                <li><i class="fas fa-check-circle"></i> Security Monitoring</li>
+                                <li><i class="fas fa-check-circle"></i> Regular Updates & Backups</li>
+                                <li><i class="fas fa-check-circle"></i> Performance Optimization</li>
+                                <li><i class="fas fa-check-circle"></i> Emergency Response</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="service-footer">
+                            <div class="service-price">
+                                <span class="starting-from">Starting from</span>
+                                <span class="price">₹500/mo</span>
+                            </div>
+                            <a href="contact.html" class="service-cta">
+                                <span>Get Started</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                        
+                        <div class="service-glow"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our <span class="text-gradient">Process</span></h2>
+                <p class="section-subtitle">Built with logic, styled with vibes. Powered by caffeine, passion, and world-class JavaScript.</p>
+            </div>
+            
+            <div class="process-steps">
+                <!-- Step 1 -->
+                <div class="process-step">
+                    <div class="step-number">
+                        <span>01</span>
+                        <div class="number-glow"></div>
+                    </div>
+                    <div class="step-content">
+                        <h3 class="step-title">Discovery & Strategy</h3>
+                        <p class="step-description">
+                            We dive deep into your business goals, target audience, and competitive landscape 
+                            to craft a winning digital strategy.
+                        </p>
+                        <div class="step-duration">
+                            <i class="fas fa-clock"></i>
+                            <span>1-2 Weeks</span>
+                        </div>
+                    </div>
+                    <div class="step-connector"></div>
+                </div>
+                
+                <!-- Step 2 -->
+                <div class="process-step">
+                    <div class="step-number">
+                        <span>02</span>
+                        <div class="number-glow"></div>
+                    </div>
+                    <div class="step-content">
+                        <h3 class="step-title">Design & Prototyping</h3>
+                        <p class="step-description">
+                            Our designers create stunning, user-centric interfaces that balance aesthetics 
+                            with functionality.
+                        </p>
+                        <div class="step-duration">
+                            <i class="fas fa-clock"></i>
+                            <span>2-3 Weeks</span>
+                        </div>
+                    </div>
+                    <div class="step-connector"></div>
+                </div>
+                
+                <!-- Step 3 -->
+                <div class="process-step">
+                    <div class="step-number">
+                        <span>03</span>
+                        <div class="number-glow"></div>
+                    </div>
+                    <div class="step-content">
+                        <h3 class="step-title">Development</h3>
+                        <p class="step-description">
+                            Our developers bring designs to life with clean, efficient code using the latest 
+                            technologies and best practices.
+                        </p>
+                        <div class="step-duration">
+                            <i class="fas fa-clock"></i>
+                            <span>4-8 Weeks</span>
+                        </div>
+                    </div>
+                    <div class="step-connector"></div>
+                </div>
+                
+                <!-- Step 4 -->
+                <div class="process-step">
+                    <div class="step-number">
+                        <span>04</span>
+                        <div class="number-glow"></div>
+                    </div>
+                    <div class="step-content">
+                        <h3 class="step-title">Testing & Launch</h3>
+                        <p class="step-description">
+                            Rigorous testing across all devices and browsers ensures a flawless launch 
+                            and optimal performance.
+                        </p>
+                        <div class="step-duration">
+                            <i class="fas fa-clock"></i>
+                            <span>1-2 Weeks</span>
+                        </div>
+                    </div>
+                    <div class="step-connector"></div>
+                </div>
+                
+                <!-- Step 5 -->
+                <div class="process-step">
+                    <div class="step-number">
+                        <span>05</span>
+                        <div class="number-glow"></div>
+                    </div>
+                    <div class="step-content">
+                        <h3 class="step-title">Support & Growth</h3>
+                        <p class="step-description">
+                            We provide ongoing support, monitoring, and optimization to ensure your 
+                            digital presence continues to grow.
+                        </p>
+                        <div class="step-duration">
+                            <i class="fas fa-clock"></i>
+                            <span>Ongoing</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Comparison -->
+    <section class="pricing-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Choose Your <span class="text-gradient">Plan</span></h2>
+                <p class="section-subtitle">Flexible pricing for businesses of all sizes. No hidden fees, just premium results.</p>
+            </div>
+            
+            <div class="pricing-cards">
+                <!-- Basic Plan -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 class="plan-name">Essential</h3>
+                        <div class="plan-price">
+                            <span class="currency">₹</span>
+                            <span class="amount">5,000</span>
+                            <span class="period">/project</span>
+                        </div>
+                        <p class="plan-description">Perfect for startups and small businesses</p>
+                    </div>
+                    
+                    <div class="pricing-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Custom Website Design</li>
+                            <li><i class="fas fa-check"></i> Mobile Responsive</li>
+                            <li><i class="fas fa-check"></i> Basic SEO Setup</li>
+                            <li><i class="fas fa-check"></i> 5 Pages</li>
+                            <li><i class="fas fa-check"></i> 30 Days Support</li>
+                            <li class="not-included"><i class="fas fa-times"></i> E-commerce Features</li>
+                            <li class="not-included"><i class="fas fa-times"></i> Custom Web App</li>
+                        </ul>
+                    </div>
+                    
+                    <a href="contact.html" class="btn btn-outline pricing-cta">
+                        <span>Get Started</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    
+                    <div class="pricing-glow"></div>
+                </div>
+                
+                <!-- Pro Plan (Most Popular) -->
+                <div class="pricing-card popular">
+                    <div class="popular-badge">
+                        <i class="fas fa-crown"></i>
+                        <span>Most Popular</span>
+                    </div>
+                    
+                    <div class="pricing-header">
+                        <h3 class="plan-name">Pro</h3>
+                        <div class="plan-price">
+                            <span class="currency">₹</span>
+                            <span class="amount">12,000</span>
+                            <span class="period">/project</span>
+                        </div>
+                        <p class="plan-description">Ideal for growing businesses</p>
+                    </div>
+                    
+                    <div class="pricing-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Everything in Essential</li>
+                            <li><i class="fas fa-check"></i> E-commerce Integration</li>
+                            <li><i class="fas fa-check"></i> Custom Web Application</li>
+                            <li><i class="fas fa-check"></i> Advanced SEO</li>
+                            <li><i class="fas fa-check"></i> Unlimited Pages</li>
+                            <li><i class="fas fa-check"></i> 90 Days Support</li>
+                            <li><i class="fas fa-check"></i> Performance Optimization</li>
+                        </ul>
+                    </div>
+                    
+                    <a href="contact.html" class="btn btn-primary pricing-cta">
+                        <span>Get Started</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    
+                    <div class="pricing-glow"></div>
+                </div>
+                
+                <!-- Enterprise Plan -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 class="plan-name">Enterprise</h3>
+                        <div class="plan-price">
+                            <span class="currency">₹</span>
+                            <span class="amount">25,000</span>
+                            <span class="period">+</span>
+                        </div>
+                        <p class="plan-description">For large-scale digital transformations</p>
+                    </div>
+                    
+                    <div class="pricing-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Everything in Pro</li>
+                            <li><i class="fas fa-check"></i> Custom SaaS Development</li>
+                            <li><i class="fas fa-check"></i> AI/ML Integration</li>
+                            <li><i class="fas fa-check"></i> Dedicated Project Manager</li>
+                            <li><i class="fas fa-check"></i> 24/7 Priority Support</li>
+                            <li><i class="fas fa-check"></i> Scalable Architecture</li>
+                            <li><i class="fas fa-check"></i> Ongoing Maintenance</li>
+                        </ul>
+                    </div>
+                    
+                    <a href="contact.html" class="btn btn-outline pricing-cta">
+                        <span>Contact Sales</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    
+                    <div class="pricing-glow"></div>
+                </div>
+            </div>
+            
+            <div class="pricing-note">
+                <i class="fas fa-info-circle"></i>
+                <p>All plans include free consultation and custom quotes. Need something different? <a href="contact.html">Contact us</a> for a tailored solution.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Frequently Asked <span class="text-gradient">Questions</span></h2>
+                <p class="section-subtitle">Everything you need to know about working with WebX</p>
+            </div>
+            
+            <div class="faq-grid">
+                <!-- FAQ Column 1 -->
+                <div class="faq-column">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>How long does a typical project take?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Timelines vary based on project complexity. A standard website takes 6-8 weeks, while custom web applications can take 8-16 weeks. We provide detailed timelines during our discovery phase.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Do you offer ongoing maintenance?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes! We offer monthly maintenance packages starting at $500/month. This includes security updates, performance monitoring, backups, and technical support.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>What's your payment structure?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We require a 50% deposit to begin work, 25% upon design approval, and the final 25% upon project completion. For larger projects, we can arrange milestone-based payments.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- FAQ Column 2 -->
+                <div class="faq-column">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Can you work with existing designs?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Absolutely! We can develop from your existing designs or create new ones. We work with Figma, Adobe XD, Sketch, and other design tools.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Do you provide hosting services?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We partner with premium hosting providers and can manage hosting for you, or we can deploy to your preferred hosting service. We recommend and optimize for performance-focused hosting.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>What technologies do you use?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We use modern technologies including React, Vue.js, Next.js, Node.js, Python, and various databases. We choose the best stack for each project's specific needs.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta services-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to Elevate Your Digital Presence?</h2>
+                <p class="cta-text">Where modern design meets engineering excellence. Let's build something amazing together.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary btn-large">
+                        <span>Start Your Project</span>
+                        <i class="fas fa-rocket"></i>
+                    </a>
+                    <a href="projects.html" class="btn btn-outline btn-large">
+                        <span>View Case Studies</span>
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="footer-logo">
+                        <img src="webx-logo-transparent.png" alt="WebX" class="footer-logo-image">
+                        <span class="footer-logo-text-sr">WebX</span>
+                        <div class="footer-logo-glow"></div>
+                    </a>
+                    
+                    <p class="footer-text">Where Code Meets Creativity. We build digital experiences that make noise and drive results.</p>
+                    
+                     <div class="social-links">
+                        <a href="https://x.com/web_x_web" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.instagram.com/webx.web" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://github.com/webx-studio" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/ishan-maitra" class="social-link">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-title">Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Web Development</a></li>
+                        <li><a href="services.html">Mobile Apps</a></li>
+                        <li><a href="services.html">E-commerce</a></li>
+                        <li><a href="services.html">UI/UX Design</a></li>
+                        <li><a href="services.html">SEO & Marketing</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-title">Contact Info</h3>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>145 Pujali Trunk Road, Budge Budge, Kolkata - 700138, WB, India</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>+91 9674026774</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>build.with.webx@gmail.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2026 WebX. All rights reserved. Built with ❤️ and premium code.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"></script>
+    <script src="script.js"></script>
+    <script src="services-animations.js"></script>
+</body>
+</html>

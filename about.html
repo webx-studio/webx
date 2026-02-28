@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About WebX — Building the Future of the Web</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+</head>
+<body class="about-page">
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Particles Background -->
+    <div id="particles-js"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="webx-logo-transparent.png" alt="WebX" class="logo-image">
+                <span class="logo-text-sr">WebX</span>
+                <div class="logo-glow-png"></div>
+                <div class="logo-glow-pulse-png"></div>
+            </a>
+            
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="about.html" class="nav-link active">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Loader -->
+    <div class="page-loader">
+        <div class="loader-content">
+            <div class="loader-logo">
+                <span>W</span>
+                <span>E</span>
+                <span>B</span>
+                <span class="neon-loader">X</span>
+            </div>
+            <div class="loader-progress">
+                <div class="progress-bar"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="about-hero">
+        <div class="container">
+            <div class="about-hero-content">
+                <!-- Animated Background Grid -->
+                <div class="hero-grid-bg">
+                    <div class="grid-line"></div>
+                    <div class="grid-line"></div>
+                    <div class="grid-line"></div>
+                    <div class="grid-line"></div>
+                    <div class="grid-line"></div>
+                </div>
+                
+                <!-- Floating Particles -->
+                <div class="hero-particles">
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                </div>
+                
+                <!-- Parallax Glow -->
+                <div class="hero-parallax-glow"></div>
+                
+                <!-- Main Content -->
+                <h1 class="about-hero-title">
+                    <span class="title-line">
+                        <span class="letter" data-letter="W">We</span>
+                        <span class="letter" data-letter="e"></span>
+                        <span class="letter" data-letter="d">Don't</span>
+                        <span class="letter" data-letter="o"></span>
+                        <span class="letter" data-letter="n'">Just</span>
+                        <span class="letter" data-letter="t"></span>
+                        <span class="letter" data-letter="t">Build</span>
+                        <span class="letter" data-letter="h"></span>
+                        <span class="letter" data-letter="F">Websites</span>
+                    </span>
+                    <span class="title-line">
+                        <span class="letter" data-letter="o">We</span>
+                        <span class="letter" data-letter="f"></span>
+                        <span class="letter" data-letter="t">Build</span>
+                        <span class="letter" data-letter="h"></span>
+                        <span class="text-gradient letter" data-letter="W"><b><i>BRANDS</i></b></span>
+                    </span>
+                </h1>
+                
+                <!-- Founder Message -->
+                <div class="founder-message">
+                    <div class="message-content">
+                        <p class="message-text">We don't just build websites—we craft digital experiences that blend cutting-edge technology with breathtaking design. At WebX, we believe the web should be fast, beautiful, and accessible to everyone. Powered by AI-driven development and fueled by creative passion, we're redefining what's possible online.</p>
+                        <div class="founder-signature">
+                            <div class="signature-line"></div>
+                            <div class="founder-info">
+                                <span class="founder-name">Ishan Maitra</span>
+                                <span class="founder-title">Founder & Lead Developer, WEBX Studio</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <span>Explore Our Story</span>
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="title-text">The</span>
+                    <span class="text-gradient">WEBX</span>
+                    <span class="title-text">Studio</span>
+                </h2>
+                <div class="animated-underline">
+                    <div class="underline-stroke"></div>
+                </div>
+                <p class="section-subtitle">Meet the visionaries, creators, and tech wizards behind every pixel-perfect project.</p>
+            </div>
+            
+            <div class="team-grid">
+                <!-- Team Member 1 -->
+                <div class="team-card" data-member="1">
+                    <div class="member-photo">
+                        <img src="Ishan Maitra.jpeg" alt="Ishan Maitra">
+                        <div class="photo-glow"></div>
+                    </div>
+                    <div class="member-info">
+                        <h3 class="member-name">Ishan Maitra</h3>
+                        <div class="member-role">Founder & Lead Developer</div>
+                        <p class="member-bio">Visionary leader with 5+ years in digital innovation. Believes code should be as beautiful as the interfaces it creates.</p>
+                        <div class="member-skills">
+                            <span class="skill-tag">AI/ML</span>
+                            <span class="skill-tag">Full Stack Development</span>
+                            <span class="skill-tag">Leadership</span>
+                        </div>
+                    </div>
+                    <div class="card-glow"></div>
+                </div>
+                
+                <!-- Team Member 2 -->
+                <div class="team-card" data-member="2">
+                    <div class="member-photo">
+                        <img src="https://topmate.io/cdn-cgi/image/width=384,quality=90/https://topmate-staging.s3.ap-south-1.amazonaws.com/rvnEit7tWysnuFT6c8SFVG.jpeg" alt="Gunjan Madaan">
+                        <div class="photo-glow"></div>
+                    </div>
+                    <div class="member-info">
+                        <h3 class="member-name">Gunjan Madaan</h3>
+                        <div class="member-role">Frontend Developer</div>
+                        <p class="member-bio">JavaScript wizard with an eye for detail. Turns complex problems into elegant, performant solutions.</p>
+                        <div class="member-skills">
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">Animation</span>
+                            <span class="skill-tag">Performance</span>
+                        </div>
+                    </div>
+                    <div class="card-glow"></div>
+                </div>
+                
+                <!-- Team Member 3 -->
+                <div class="team-card" data-member="3">
+                    <div class="member-photo">
+                        <img src="https://www.wildnettechnologies.com/wp-content/uploads/2025/07/Nikhil-Reddy.webp" alt="Nikhil Reddy">
+                        <div class="photo-glow"></div>
+                    </div>
+                    <div class="member-info">
+                        <h3 class="member-name">Nikhil Reddy</h3>
+                        <div class="member-role">Backend Architect</div>
+                        <p class="member-bio">Scales dreams into robust systems. Builds the invisible architecture that powers seamless experiences.</p>
+                        <div class="member-skills">
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">APIs</span>
+                            <span class="skill-tag">DevOps</span>
+                        </div>
+                    </div>
+                    <div class="card-glow"></div>
+                </div>
+                
+                <!-- Team Member 4 -->
+                <div class="team-card" data-member="4">
+                    <div class="member-photo">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Jamie Lee">
+                        <div class="photo-glow"></div>
+                    </div>
+                    <div class="member-info">
+                        <h3 class="member-name">Jamie Lee</h3>
+                        <div class="member-role">UI/UX Designer</div>
+                        <p class="member-bio">Creates interfaces that feel like magic. Believes design should serve both beauty and function.</p>
+                        <div class="member-skills">
+                            <span class="skill-tag">Figma</span>
+                            <span class="skill-tag">Prototyping</span>
+                            <span class="skill-tag">Research</span>
+                        </div>
+                    </div>
+                    <div class="card-glow"></div>
+                </div>
+                
+                <!-- Team Member 5 -->
+                <div class="team-card" data-member="5">
+                    <div class="member-photo">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="David Kim">
+                        <div class="photo-glow"></div>
+                    </div>
+                    <div class="member-info">
+                        <h3 class="member-name">David Kim</h3>
+                        <div class="member-role">AI Integration Specialist</div>
+                        <p class="member-bio">Bridges human creativity with machine intelligence. Builds smart systems that learn and adapt.</p>
+                        <div class="member-skills">
+                            <span class="skill-tag">AI/ML</span>
+                            <span class="skill-tag">Automation</span>
+                            <span class="skill-tag">Data</span>
+                        </div>
+                    </div>
+                    <div class="card-glow"></div>
+                </div>
+                
+                <!-- Team Member 6 -->
+                <div class="team-card" data-member="6">
+                    <div class="member-photo">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Taylor Morgan">
+                        <div class="photo-glow"></div>
+                    </div>
+                    <div class="member-info">
+                        <h3 class="member-name">Taylor Morgan</h3>
+                        <div class="member-role">Motion & Interaction Designer</div>
+                        <p class="member-bio">Breathes life into static interfaces. Crafts animations that tell stories and guide users.</p>
+                        <div class="member-skills">
+                            <span class="skill-tag">GSAP</span>
+                            <span class="skill-tag">Three.js</span>
+                            <span class="skill-tag">Framer</span>
+                        </div>
+                    </div>
+                    <div class="card-glow"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Technologies Section -->
+    <section class="tech-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Technologies We <span class="text-gradient">Use</span></h2>
+                <p class="section-subtitle">Our toolkit for crafting exceptional digital experiences.</p>
+            </div>
+            
+            <div class="tech-grid">
+                <!-- Tech Item 1 -->
+                <div class="tech-item" data-tech="html">
+                    <div class="tech-icon">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <div class="tech-tooltip">HTML5</div>
+                    <div class="tech-glow"></div>
+                </div>
+                
+                <!-- Tech Item 2 -->
+                <div class="tech-item" data-tech="css">
+                    <div class="tech-icon">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <div class="tech-tooltip">CSS3</div>
+                    <div class="tech-glow"></div>
+                </div>
+                
+                <!-- Tech Item 3 -->
+                <div class="tech-item" data-tech="js">
+                    <div class="tech-icon">
+                        <i class="fab fa-js"></i>
+                    </div>
+                    <div class="tech-tooltip">JavaScript</div>
+                    <div class="tech-glow"></div>
+                </div>
+                
+                <!-- Tech Item 4 -->
+                <div class="tech-item" data-tech="react">
+                    <div class="tech-icon">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <div class="tech-tooltip">React</div>
+                    <div class="tech-glow"></div>
+                </div>
+                
+                <!-- Tech Item 5 -->
+                <div class="tech-item" data-tech="node">
+                    <div class="tech-icon">
+                        <i class="fab fa-node-js"></i>
+                    </div>
+                    <div class="tech-tooltip">Node.js</div>
+                    <div class="tech-glow"></div>
+                </div>
+                
+                <!-- Tech Item 6 -->
+                <div class="tech-item" data-tech="gsap">
+                    <div class="tech-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="tech-tooltip">GSAP</div>
+                    <div class="tech-glow"></div>
+                </div>
+                
+                <!-- Tech Item 7 -->
+                <div class="tech-item" data-tech="three">
+                    <div class="tech-icon">
+                        <i class="fas fa-cube"></i>
+                    </div>
+                    <div class="tech-tooltip">Three.js</div>
+                    <div class="tech-tooltip"></div>
+                </div>
+                
+                <!-- Tech Item 8 -->
+                <div class="tech-item" data-tech="ai">
+                    <div class="tech-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="tech-tooltip">AI APIs</div>
+                    <div class="tech-glow"></div>
+                </div>
+                
+                <!-- Tech Item 9 -->
+                <div class="tech-item" data-tech="vue">
+                    <div class="tech-icon">
+                        <i class="fab fa-vuejs"></i>
+                    </div>
+                    <div class="tech-tooltip">Vue.js</div>
+                    <div class="tech-glow"></div>
+                </div>
+                
+                <!-- Tech Item 10 -->
+                <div class="tech-item" data-tech="graphql">
+                    <div class="tech-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <div class="tech-tooltip">GraphQL</div>
+                    <div class="tech-glow"></div>
+                </div>
+                
+                <!-- Tech Item 11 -->
+                <div class="tech-item" data-tech="mongodb">
+                    <div class="tech-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <div class="tech-tooltip">MongoDB</div>
+                    <div class="tech-glow"></div>
+                </div>
+                
+                <!-- Tech Item 12 -->
+                <div class="tech-item" data-tech="aws">
+                    <div class="tech-icon">
+                        <i class="fab fa-aws"></i>
+                    </div>
+                    <div class="tech-tooltip">AWS</div>
+                    <div class="tech-glow"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta about-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to Build the Future Together?</h2>
+                <p class="cta-text">Join visionary brands who trust WebX to bring their digital ideas to life.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary btn-large">
+                        <span>Start a Project</span>
+                        <i class="fas fa-rocket"></i>
+                    </a>
+                    <a href="projects.html" class="btn btn-outline btn-large">
+                        <span>View Our Work</span>
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="footer-logo">
+                        <img src="webx-logo-transparent.png" alt="WebX" class="footer-logo-image">
+                        <span class="footer-logo-text-sr">WebX</span>
+                        <div class="footer-logo-glow"></div>
+                    </a>
+                    
+                    <p class="footer-text">Where Code Meets Creativity. We build digital experiences that make noise and drive results.</p>
+                    
+                     <div class="social-links">
+                        <a href="https://x.com/web_x_web" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.instagram.com/webx.web" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://github.com/webx-studio" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/ishan-maitra" class="social-link">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-title">Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Web Development</a></li>
+                        <li><a href="services.html">Mobile Apps</a></li>
+                        <li><a href="services.html">E-commerce</a></li>
+                        <li><a href="services.html">UI/UX Design</a></li>
+                        <li><a href="services.html">SEO & Marketing</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-title">Contact Info</h3>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>145 Pujali Trunk Road, Budge Budge, Kolkata - 700138, WB, India</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>+91 9674026774</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>build.with.webx@gmail.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2026 WebX. All rights reserved. Built with ❤️ and premium code.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"></script>
+    <script src="script.js"></script>
+    <script src="animations.js"></script>
+</body>
+</html>
